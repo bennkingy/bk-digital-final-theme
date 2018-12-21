@@ -110,177 +110,224 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 /* Colours */
-$color-white:  white;
-$color-primary: red;
-$color-black: black;
-$color-primary-light: #ccc;
-$color-primary-dark: black;
+$base : #F7F6F0;
+$darken : darken(#F7F6F0 , 30%);
+$back: darken(#F7F6F0, 40%);
 
-body {background:red;}
+$color-primary-light : #F7F6F0;
+$color-primary-dark : red;
+
+// COLORS
+$color-primary: #040404;
+$color-primary-light: #040404;
+$color-primary-dark: #040404;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+body {background:green;}
+html {font-size:62.5%; }
+h1 {    font-size: 4em;
+	font-weight: 500;
+	margin: 0.67em 0;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;}
+/* Fonts */
+
+// Raleway font
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+.text-center {
+  text-align: center!important;
+}
+
+.lead {
+  font-size: 2.25rem;
+  font-weight: 300;
+}
 
 /* Nav */
 .navigation {
-    &__checkbox {
-        display: none;
-    }
-
-    &__button {
-        background-color: $color-white;
-        height: 7rem;
-        width: 7rem;
-        position: fixed;
-        top: 6rem;
-        right: 6rem;
-        border-radius: 50%;
-        z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba($color-black, .1);
-        text-align: center;
-        cursor: pointer;
-    }
-
-    &__background {
-        height: 6rem;
-        width: 6rem;
-        border-radius: 50%;
-        position: fixed;
-        top: 6.5rem;
-        right: 6.5rem;
-        background-image: radial-gradient($color-primary-light, $color-primary-dark);
-        z-index: 1000;
-        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-
-        //transform: scale(80);
-    }
-
-    &__nav {
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1500;
-
-        opacity: 0;
-        width: 0;
-        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-
-    &__list {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        list-style: none;
-        text-align: center;
+	&__checkbox {
+		display: none;
+	}
+  
+	&__button {
+		height: 7rem;
+		width: 7rem; // Remove height/width then use scale to fix 
+		position: fixed;
+		top: 3.9rem;
+		right: 4rem;
+		border-radius: 50%;
+		z-index: 2000;
+		box-shadow: 0 1rem 3rem rgba($color-black, .1);
+		text-align: center;
+		cursor: pointer;
+	}
+  
+	&__background {
+		height: 6rem;
+		width: 6rem;
+		border-radius: 50%;
+		position: fixed;
+		top: 4.5rem;
+		right: 4.5rem;
+		background: #061421;
+		z-index: 1000;
+		transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+	}
+  
+	&__nav {
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1500;
+		opacity: 0;
+		width: 0;
+		transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+  
+	&__list {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		list-style: none;
+		text-align: center;
 		width: 100%;
-		margin: 0;
-    }
-
-    &__item {
-        margin: 1rem;
-    }
-
-    &__link {
-        &:link,
-        &:visited {
-            display: inline-block;
-            font-size: 3rem;
-            font-weight: 300;
-            padding: 1rem 2rem;
-            color: $color-white;
-            text-decoration: none;
-            text-transform: uppercase;
-            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-            background-size: 220%;
-            transition: all .4s;
-
-            span {
-                margin-right: 1.5rem;
-                display: inline-block;
-            }
-        }
-        
-        &:hover,
-        &:active {
-            background-position: 100%;
-            color: $color-primary;
-            transform: translateX(1rem);
-        }
-    }
-
-
-    //FUNCTIONALITY
-    &__checkbox:checked ~ &__background {
-        transform: scale(80);
-    }
-
-    &__checkbox:checked ~ &__nav {
-        opacity: 1;
-        width: 100%;
-    }
-
-
-    //ICON
-    &__icon {
-        position: relative;
-        margin-top: 3.5rem;
-
-        &,
-        &::before,
-        &::after {
-            width: 3rem;
-            height: 2px;
-            background-color: black;
-            display: inline-block;
-        }
-
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            transition: all .2s;
-        }
-
-        &::before { top: -.8rem; }
-        &::after { top: .8rem; }
-    }
-
-    &__button:hover &__icon::before {
-        top: -1rem;
-    }
-
-    &__button:hover &__icon::after {
-        top: 1rem;
-    }
-
-    &__checkbox:checked + &__button &__icon {
-        background-color: transparent;
-    }
-
-    &__checkbox:checked + &__button &__icon::before {
-        top: 0;
-        transform: rotate(135deg);
-    }
-
-    &__checkbox:checked + &__button &__icon::after {
-        top: 0;
-        transform: rotate(-135deg);
-    }
-}
+		padding-inline-start: 0px;
+		margin: 0 !important;
+	}
+  
+	&__item {
+		margin: 1rem;
+		font-family: 'Raleway', sans-serif;
+	}
+  
+	&__link {
+		&:link,
+		&:visited {
+			display: inline-block;
+			font-family: Raleway,sans-serif;
+			font-size: 3rem;
+			font-weight: 400;
+			padding: 1rem 2rem;
+			color: $color-white;
+			text-decoration: none;
+			text-transform: uppercase;
+			background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+			background-size: 255%;
+			transition: all .4s;
+			text-rendering: geometricPrecision;
+			span {
+				margin-right: 1.5rem;
+				display: inline-block;
+			}
+		}
+		
+		&:hover,
+		&:active {
+			background-position: 100%;
+			color: $color-primary;
+			transform: translateX(1rem);
+		}
+	}
+  
+  
+	//FUNCTIONALITY
+	&__checkbox:checked ~ &__background {
+		transform: scale(100);
+	}
+  
+	&__checkbox:checked ~ &__nav {
+		opacity: 1;
+		width: 100%;
+	}
+  
+  
+	//ICON
+	&__icon {
+		position: relative;
+		margin-top: 3.5rem;
+  
+		&,
+		&::before,
+		&::after {
+			width: 4rem;
+			height: 4px;
+			background-color: white;
+			display: inline-block;
+			border-radius: 4px;
+		}
+  
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			transition: all .2s;
+		}
+  
+		&::before { top: -1rem; }
+		&::after { top: 1rem; }
+	}
+  
+	&__button:hover &__icon::before {
+		top: -1.2rem;
+	}
+  
+	&__button:hover &__icon::after {
+		top: 1.2rem;
+	}
+  
+	&__checkbox:checked + &__button &__icon {
+		background-color: transparent;
+	}
+  
+	&__checkbox:checked + &__button &__icon::before {
+		top: 0;
+		transform: rotate(135deg);
+	}
+  
+	&__checkbox:checked + &__button &__icon::after {
+		top: 0;
+		transform: rotate(-135deg);
+	}
+  }
 
 // Header Items
 .headerItems {
+	position:relative;
+	z-index: 999999999;
 
-  &__logo-box {
-      position: absolute;
-      top: 4rem;
-      left: 4rem;
-  }
+	&__logo-box {
+		position: absolute;
+		top: 4rem;
+		left: 4rem;
 
-  &__logo {
-      height: 7rem;
-  }
-  
+		.site-description a{
+			display: none;
+		}
+
+	}
+
+	&__logo {
+		height: 7rem;
+	}
 
 }
 
@@ -312,6 +359,10 @@ body {background:red;}
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
+
+		.header__brand {
+			height: 20rem;
+		  }
   
 		h1 {
 			color: white;
@@ -394,10 +445,6 @@ body {background:red;}
   
 	}
   
-	&__brand {
-	  height: 20rem;
-	}
-  
 	.px-row-polygon {
 	  background-color: #fff;
 	  clip-path: polygon(34% 82%,65% 54%,100% 84%,100% 100%,0 100%,12% 62%);
@@ -408,7 +455,4 @@ body {background:red;}
 	  height: 200px;
 	}
   
-  }
-  
-  // @include position(absolute, 50% 0 0 50%);
-  
+}
