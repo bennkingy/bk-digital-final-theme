@@ -2,3 +2,15 @@
 12/21/18 5:02:51: style.scss - unexpected }: failed at `&__logo-box {` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 428
 12/21/18 5:03:42: style.scss - unexpected }: failed at `&__logo-box {` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 428
 12/21/18 5:04:04: style.scss - unexpected }: failed at `&__logo-box {` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 428
+12/21/18 5:06:41: style.scss - unexpected }: failed at `&__logo-box {` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 428
+12/21/18 5:10:24: style.scss - unexpected }: failed at `&__logo-box {` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 428
+12/21/18 5:12:10: style.scss - unexpected }: failed at `.firstSection {` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 321
+12/21/18 5:13:10: style.scss - unexpected }: failed at `.firstSection {` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 321
+12/21/18 5:13:12: style.scss - unexpected }: failed at `.firstSection {` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 321
+12/21/18 5:13:13: style.scss - unexpected }: failed at `.firstSection {` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 321
+12/21/18 5:13:57: style.scss - unexpected }: failed at `` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 468
+12/21/18 5:14:00: style.scss - unexpected }: failed at `` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 468
+12/21/18 5:14:02: style.scss - unexpected }: failed at `` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 468
+12/21/18 5:17:33: style.scss - unclosed block: failed at `` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 410
+12/21/18 5:17:34: style.scss - unclosed block: failed at `` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 410
+12/21/18 5:17:37: style.scss - unclosed block: failed at `` /Applications/MAMP/htdocs/wordpress/wp-content/themes/bk-digital-final-theme/sass/style.scss on line 410

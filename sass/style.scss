@@ -108,8 +108,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Overrides
 --------------------------------------------------------------*/
-/* Colours */
 
+/* Colours */
 $color-white:  white;
 $color-primary: red;
 $color-black: black;
@@ -117,6 +117,7 @@ $color-primary-light: #ccc;
 $color-primary-dark: black;
 
 body {background:red;}
+
 /* Nav */
 .navigation {
     &__checkbox {
@@ -267,45 +268,8 @@ body {background:red;}
     }
 }
 
+// Header Items
 .headerItems {
-/*	height: 100vh;
-	background-image: linear-gradient(
-		to top,
-		rgba($color-primary-light, 0.9),
-		rgba($color-primary-dark, 0.6)),
-	url('https://www.bkdigital.co.uk/wp-content/uploads/2018/11/bg.jpeg');
-	background-size: cover;
-	background-position: top;*/
-	position: relative;
-	/*
-	@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-			only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-			only screen and (min-width: 125em) {
-		background-image: linear-gradient(
-			to top,
-			rgba($color-primary-light, 0.9),
-			rgba($color-primary-dark, 0.6)),
-		url('https://www.bkdigital.co.uk/wp-content/uploads/2018/11/bg.jpeg');
-	} .header {
-  height: 100vh;
-  background-image: linear-gradient(
-      to top,
-      rgba($color-primary-light, 0.9),
-      rgba($color-primary-dark, 0.6)),
-  url('https://www.bkdigital.co.uk/wp-content/uploads/2018/11/bg.jpeg');
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-          only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-          only screen and (min-width: 125em) {
-      background-image: linear-gradient(
-          to top,
-          rgba($color-primary-light, 0.9),
-          rgba($color-primary-dark, 0.6)),
-      url('https://www.bkdigital.co.uk/wp-content/uploads/2018/11/bg.jpeg');
- */ }
 
   &__logo-box {
       position: absolute;
@@ -317,124 +281,31 @@ body {background:red;}
       height: 7rem;
   }
   
-  &__text-box {
-      position: absolute;
-      top: 48%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-
-      h1 {
-          color: white;
-          font-size:5rem;
-          font-weight: 400;
-          text-transform: uppercase;
-          margin-top: -0.9rem;
-        
-          span {
-               font-size: 8rem;
-               display: block;
-               text-rendering: geometricPrecision;
-
-               > span {
-                   color: white;
-                   display: none;
-
-               }
-
-               &.heading-primary--main {
-                   color:white;
-                   letter-spacing: 2.7rem;
-                   text-indent: 2.05rem;
-               }
-
-               &.heading-primary--sub  {
-                color: white;
-                font-size: 4rem;
-                margin-top: -4rem;
-            }
-          }
-      }
-
-    .btn--clear {
-        margin-top: 0rem;
-        position: relative;
-        color: white;
-        // border: 2px solid white;
-        padding: 1.3rem 2.3rem;
-        // border-radius: 4px;
-        font-size: 2rem;
-        transition: all 300ms ease-out;   
-        font-weight: 400; 
-         &:hover {
-            padding: 1.3rem 3.3rem;
-            transition: all 300ms ease-out;    
-         }
-         &:hover > span {
-             transform: translate3d(-1.6rem, 0, 0);
-            }
-         i {
-            background: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/eye-1.svg');
-            width: 28px;
-            height: 28px;
-            display: inline-block;
-         }
-         > span {
-                 display: inline-block;
-                 position: relative;
-                 transition: all 300ms ease-out;
-                 will-change: transform;
-                 text-rendering: geometricPrecision;
-             }
-        > span > i {
-                    position: absolute;
-                    width: 1.3em;
-                    right: 0px;
-                    right: 0rem;
-                    opacity: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    transition: all 300ms ease-out;
-                    will-change: right, opacity;
-                }
-        &:hover > span > i {
-                            opacity: 1;
-                            right: -3.3rem;
-        }
-    }
-
-  }
-
-  &__brand {
-    height: 20rem;
-  }
-
-  .px-row-polygon {
-    background-color: #fff;
-    clip-path: polygon(34% 82%,65% 54%,100% 84%,100% 100%,0 100%,12% 62%);
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    height: 200px;
-  }
 
 }
 
-// @include position(absolute, 50% 0 0 50%);
-
- 
-  
-	&__logo-box {
-		position: absolute;
-		top: 4rem;
-		left: 4rem;
-	}
-  
-	&__logo {
-		height: 7rem;
-	}
+// First Section
+.firstSection{
+	height: 100vh;
+	background-image: linear-gradient(
+		to top,
+		rgba($color-primary-light, 0.9),
+		rgba($color-primary-dark, 0.6)),
+	url('https://www.bkdigital.co.uk/wp-content/uploads/2018/11/bg.jpeg');
+	background-size: cover;
+	background-position: top;
+	position: relative;
 	
+	@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+			only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+			only screen and (min-width: 125em) {
+		background-image: linear-gradient(
+			to top,
+			rgba($color-primary-light, 0.9),
+			rgba($color-primary-dark, 0.6)),
+		url('https://www.bkdigital.co.uk/wp-content/uploads/2018/11/bg.jpeg');
+	}
+  
 	&__text-box {
 		position: absolute;
 		top: 48%;
@@ -474,10 +345,70 @@ body {background:red;}
 			}
 		}
   
+	  .btn--clear {
+		  margin-top: 0rem;
+		  position: relative;
+		  color: white;
+		  // border: 2px solid white;
+		  padding: 1.3rem 2.3rem;
+		  // border-radius: 4px;
+		  font-size: 2rem;
+		  transition: all 300ms ease-out;   
+		  font-weight: 400; 
+		   &:hover {
+			  padding: 1.3rem 3.3rem;
+			  transition: all 300ms ease-out;    
+		   }
+		   &:hover > span {
+			   transform: translate3d(-1.6rem, 0, 0);
+			  }
+		   i {
+			  background: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/eye-1.svg');
+			  width: 28px;
+			  height: 28px;
+			  display: inline-block;
+		   }
+		   > span {
+				   display: inline-block;
+				   position: relative;
+				   transition: all 300ms ease-out;
+				   will-change: transform;
+				   text-rendering: geometricPrecision;
+			   }
+		  > span > i {
+					  position: absolute;
+					  width: 1.3em;
+					  right: 0px;
+					  right: 0rem;
+					  opacity: 0;
+					  top: 50%;
+					  transform: translateY(-50%);
+					  transition: all 300ms ease-out;
+					  will-change: right, opacity;
+				  }
+		  &:hover > span > i {
+							  opacity: 1;
+							  right: -3.3rem;
+		  }
+	  }
+  
 	}
   
 	&__brand {
 	  height: 20rem;
 	}
-
-}
+  
+	.px-row-polygon {
+	  background-color: #fff;
+	  clip-path: polygon(34% 82%,65% 54%,100% 84%,100% 100%,0 100%,12% 62%);
+	  position: absolute;
+	  bottom: 0px;
+	  left: 0;
+	  width: 100%;
+	  height: 200px;
+	}
+  
+  }
+  
+  // @include position(absolute, 50% 0 0 50%);
+  

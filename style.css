@@ -874,67 +874,112 @@ body {
   top: 0;
   transform: rotate(-135deg);
 }
-.header {
-  /*	height: 100vh;
-   background-image: linear-gradient(
-   to top,
-   rgba($color-primary-light, 0.9),
-   rgba($color-primary-dark, 0.6)),
-   url('https://www.bkdigital.co.uk/wp-content/uploads/2018/11/bg.jpeg');
-   background-size: cover;
-   background-position: top;
-   position: relative;
-   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-   only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-   only screen and (min-width: 125em) {
-   background-image: linear-gradient(
-   to top,
-   rgba($color-primary-light, 0.9),
-   rgba($color-primary-dark, 0.6)),
-   url('https://www.bkdigital.co.uk/wp-content/uploads/2018/11/bg.jpeg');
-   } */
-}
-.header__logo-box {
+.headerItems__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-.header__logo {
+.headerItems__logo {
   height: 7rem;
 }
-.header__text-box {
+.firstSection {
+  height: 100vh;
+  background-image: linear-gradient(to top, rgba(204, 204, 204, 0.9), rgba(0, 0, 0, 0.6)), url('https://www.bkdigital.co.uk/wp-content/uploads/2018/11/bg.jpeg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+  .firstSection {
+    background-image: linear-gradient(to top, rgba(204, 204, 204, 0.9), rgba(0, 0, 0, 0.6)), url('https://www.bkdigital.co.uk/wp-content/uploads/2018/11/bg.jpeg');
+  }
+}
+.firstSection__text-box {
   position: absolute;
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.header__text-box h1 {
+.firstSection__text-box h1 {
   color: white;
   font-size: 5rem;
   font-weight: 400;
   text-transform: uppercase;
   margin-top: -0.9rem;
 }
-.header__text-box h1 span {
+.firstSection__text-box h1 span {
   font-size: 8rem;
   display: block;
   text-rendering: geometricPrecision;
 }
-.header__text-box h1 span > span {
+.firstSection__text-box h1 span > span {
   color: white;
   display: none;
 }
-.header__text-box h1 span.heading-primary--main {
+.firstSection__text-box h1 span.heading-primary--main {
   color: white;
   letter-spacing: 2.7rem;
   text-indent: 2.05rem;
 }
-.header__text-box h1 span.heading-primary--sub {
+.firstSection__text-box h1 span.heading-primary--sub {
   color: white;
   font-size: 4rem;
   margin-top: -4rem;
 }
-.header__brand {
+.firstSection__text-box .btn--clear {
+  margin-top: 0rem;
+  position: relative;
+  color: white;
+  padding: 1.3rem 2.3rem;
+  font-size: 2rem;
+  transition: all 300ms ease-out;
+  font-weight: 400;
+}
+.firstSection__text-box .btn--clear:hover {
+  padding: 1.3rem 3.3rem;
+  transition: all 300ms ease-out;
+}
+.firstSection__text-box .btn--clear:hover > span {
+  transform: translate3d(-1.6rem, 0, 0);
+}
+.firstSection__text-box .btn--clear i {
+  background: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/eye-1.svg');
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
+.firstSection__text-box .btn--clear > span {
+  display: inline-block;
+  position: relative;
+  transition: all 300ms ease-out;
+  will-change: transform;
+  text-rendering: geometricPrecision;
+}
+.firstSection__text-box .btn--clear > span > i {
+  position: absolute;
+  width: 1.3em;
+  right: 0px;
+  right: 0rem;
+  opacity: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 300ms ease-out;
+  will-change: right, opacity;
+}
+.firstSection__text-box .btn--clear:hover > span > i {
+  opacity: 1;
+  right: -3.3rem;
+}
+.firstSection__brand {
   height: 20rem;
+}
+.firstSection .px-row-polygon {
+  background-color: #fff;
+  clip-path: polygon(34% 82%, 65% 54%, 100% 84%, 100% 100%, 0 100%, 12% 62%);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 200px;
 }

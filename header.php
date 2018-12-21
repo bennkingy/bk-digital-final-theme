@@ -26,7 +26,7 @@
 
 	 <header id="masthead" class="site-header headerItems">
 		<div class="site-branding">
-			<div class="header__logo-box">
+			<div class="headerItems__logo-box">
 			<?php
             the_custom_logo();
             if (is_front_page() && is_home()) :
