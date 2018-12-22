@@ -30,24 +30,6 @@ get_header(); ?>
         </div>
         
         <div class="nak-gallery nlg1" id="gallery">	
-            <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/robHoffman.jpg" class="revGallery-anchor websites">
-                <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/robHoffman.jpg">
-                <div style="overflow:hidden">
-                <div class="nak-gallery-poster" style="background-image:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/robHoffman.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
-                </div>
-                <div class="gal-overlay">
-                <div class="photo"></div>
-                </div>
-            </a>
-            <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/Pyramid-Lofts.png" class="revGallery-anchor branding">
-                <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/Pyramid-Lofts.png">
-                <div style="overflow:hidden">
-                <div class="nak-gallery-poster" style="background-image:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/Pyramid-Lofts.png');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
-                </div>
-                <div class="gal-overlay">
-                <div class="photo"></div>
-                </div>
-            </a>	
             <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/belcon-portfolio.jpg" class="revGallery-anchor websites">
                 <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/belcon-portfolio.jpg">
                 <div style="overflow:hidden">
@@ -57,6 +39,24 @@ get_header(); ?>
                 <div class="photo"></div>
                 </div>
             </a>	
+            <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/Pyramid-Lofts.png" class="revGallery-anchor branding">
+                <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/Pyramid-Lofts.png">
+                <div style="overflow:hidden">
+                <div class="nak-gallery-poster" style="background-image:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/Pyramid-Lofts.png');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
+                </div>
+                <div class="gal-overlay">
+                <div class="photo"></div>
+                </div>
+            </a>
+            <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/robHoffman.jpg" class="revGallery-anchor websites">
+                <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/robHoffman.jpg">
+                <div style="overflow:hidden">
+                <div class="nak-gallery-poster" style="background-image:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/robHoffman.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
+                </div>
+                <div class="gal-overlay">
+                <div class="photo"></div>
+                </div>
+            </a>
             <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/cpzinc.jpg" class="revGallery-anchor logos">
                 <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/cpzinc.jpg">
                 <div style="overflow:hidden">
@@ -171,8 +171,8 @@ get_header(); ?>
     <div class="container">
         <div id="timedown">Deal runs out in: <span id="demo"></span></div>
         <h1 class="text-center">All In One Package</h1>
-        <p class="lead text-center">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-        <ul class="justify-content-center">
+        <p class="lead text-center">I will soon be offering a all in one package offering branding, website design, logo design, hosting, email, support and hosting for a year.</p>
+    <!--      <ul class="justify-content-center">
           <li class="list-inline-item">Website Design</li>
           <li class="list-inline-item">Logo Design</li>    
           <li class="list-inline-item">Hosting</li>
@@ -182,6 +182,7 @@ get_header(); ?>
           <li class="list-inline-item">Branding</li>  
         </ul>
         <a class="btn btn-lg btn-black mx-auto d-block d-flex justify-content-center" href="#" role="button"><span>Buy Now<i class="shopping-cart"></i></span></a>
+    -->
     </div>
 
     </section>

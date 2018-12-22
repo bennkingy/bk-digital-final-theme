@@ -784,7 +784,7 @@ h1 {
   text-align: center !important;
 }
 .lead {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 /* Nav */
@@ -1438,7 +1438,34 @@ section.blogItems .card:before {
   background: white;
 }
 #deal h1 {
-  color: #f36;
+  color: #061421;
+  text-rendering: geometricPrecision;
+}
+#deal h1:before {
+  content: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon.svg');
+  position: relative;
+  /* with class ModalCarrot ??*/
+  z-index: 3;
+  left: -10px;
+  top: -9px;
+  width: 20px;
+  display: inline-block;
+}
+#deal h1:after {
+  content: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon.svg');
+  position: relative;
+  /* with class ModalCarrot ??*/
+  z-index: 3;
+  right: -10px;
+  top: -9px;
+  width: 20px;
+  display: inline-block;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 #timedown {
   display: block;
@@ -1449,9 +1476,12 @@ section.blogItems .card:before {
   z-index: 1;
   text-align: center;
   font-size: 12px;
-  color: #2d2d2d;
+  color: #061421;
+  text-rendering: geometricPrecision;
   font-weight: 600;
   font-family: "Raleway", arial, sans-serif;
+  margin-bottom: -4rem;
+  margin-top: 4rem;
 }
 #deal a.btn-black > span > i {
   background: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/05/shopping-cart.png');
@@ -1491,4 +1521,80 @@ section.blogItems .card:before {
 }
 #demo {
   font-weight: 700;
+}
+/****************** Footer Section
+ *********************************/
+.px-row-polygon4 {
+  height: 200px;
+  background-color: white;
+  -webkit-clip-path: polygon(34% 82%, 65% 54%, 100% 84%, 100% 100%, 0 100%, 12% 62%);
+  clip-path: polygon(34% 82%, 65% 54%, 100% 84%, 100% 100%, 0 100%, 12% 62%);
+  margin-bottom: 0px;
+  z-index: 999;
+  position: relative;
+  transform: rotate(180deg);
+  margin-bottom: -208px;
+}
+#wrapper-footer > div {
+  background: #061421;
+  padding-bottom: 30px;
+}
+#wrapper-footer .container-fluid {
+  padding-top: 17rem;
+}
+footer {
+  padding-top: 0px;
+  z-index: -11;
+  position: inherit;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline 1px dotted;
+}
+footer #logofooter {
+  width: 189px;
+  float: left;
+}
+#socials svg {
+  max-height: 50px;
+  margin-right: 20px;
+  height: 50px;
+}
+#socials li {
+  float: left;
+  list-style-type: none;
+}
+#socials {
+  margin-bottom: 37px;
+  float: right;
+}
+.site-info {
+  float: right;
+  margin-top: 2rem;
+}
+#colophon > div {
+  text-align: center;
+  margin-bottom: -30px;
+}
+@media (min-width: 1512px) {
+  #wrapper-footer {
+    background-size: cover;
+    height: 140px;
+  }
+  #intro:after {
+    background-size: cover;
+    height: 140px;
+  }
+}
+@media (max-width: 767px) {
+  #colophon > div {
+    text-align: center;
+  }
+  #socials {
+    margin-top: 49px;
+  }
+  #socials svg:last-of-type {
+    margin-right: 0px;
+  }
 }
