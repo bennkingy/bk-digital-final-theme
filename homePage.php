@@ -147,6 +147,26 @@ get_header(); ?>
 
     </section>
 
+    <section id="clients">  
+        <div class="container">
+            <h1 class="text-center titleheader">Our Clients</h2>
+
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper" style="align-items: center;">
+                <div class="swiper-slide"><img src="https://www.bkdigital.co.uk/wp-content/uploads/2018/05/bar-logo-300x58.png" alt="bar logo" width="300" height="58" class="aligncenter size-medium wp-image-2542" /></div>
+                <div class="swiper-slide"><img src="https://www.bkdigital.co.uk/wp-content/uploads/2018/05/belcon-logo.png" alt="belcon logo" width="250" height="78" class="aligncenter size-full wp-image-2547" /></div>
+                <div class="swiper-slide"><img src="https://www.bkdigital.co.uk/wp-content/uploads/2018/05/aff-decorating.png" alt="aff decorating logo" width="253" height="39" class="aligncenter size-full wp-image-2553" /></div>
+                <div class="swiper-slide"><img src="https://www.bkdigital.co.uk/wp-content/uploads/2018/05/wildcard-logo.png" alt="wildcard logo" width="256" height="212" class="aligncenter size-full wp-image-2549" style="max-width:150px;" /></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+         </div>
+
+    </section>
+    <div class="px-row-polygon3"></div>
+
 		</main><!-- #main -->
     </div><!-- #primary -->
     
@@ -206,6 +226,37 @@ get_header(); ?>
             }
         }); 
     </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+            jQuery(document).ready(function() {
+    var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+        },
+        768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        },
+        640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        },
+        320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        }}});
+            });
+    </script>
+    <!-- Swiper -->
 
 <?php
 get_footer();
