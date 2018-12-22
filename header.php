@@ -17,6 +17,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/js/lightgallery-all.min.js'></script>
+	<script src='https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js'></script>
+	<script src='https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js'></script>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/css/lightgallery.min.css'>
+
 	<?php wp_head(); ?>
 </head>
 

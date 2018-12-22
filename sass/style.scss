@@ -173,7 +173,7 @@ h1 {
 	&__button {
 		height: 7rem;
 		width: 7rem; // Remove height/width then use scale to fix 
-		position: fixed;
+		position: absolute;
 		top: 3.9rem;
 		right: 4rem;
 		border-radius: 50%;
@@ -187,7 +187,7 @@ h1 {
 		height: 6rem;
 		width: 6rem;
 		border-radius: 50%;
-		position: fixed;
+		position: absolute;
 		top: 4.5rem;
 		right: 4.5rem;
 		background: #061421;
@@ -467,56 +467,138 @@ h1 {
 }
 
 // Portfolio
-.container-fluid.no-gutter {
-	padding: 0px;
-}
-.container-fluid.no-gutter .row [class*='col-']:not(:first-child),
-.container-fluid.no-gutter .row [class*='col-']:not(:last-child)
-{
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.row {
-   margin-left:0;
-   margin-right:0;
-}
-
-.item { 
-  border: none;
-}
-
-/* Isotope Transitions
-------------------------------- */
-.isotope,
-.isotope .item {
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-      -ms-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-}
-
-.isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
-}
-
-.isotope .item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:         top, left, opacity;
-          transition-property:         transform, opacity;
-}
+.revGallery-anchor, .gal-overlay, .nak-gallery-poster{
+	box-sizing: border-box;
+  }
   
   
-/* responsive media queries */
+  .revGallery-anchor{
+	overflow: hidden;
+	position: relative;
+	width: calc(100% / 4);
+	display: block;
+	float: left;
+  }
+  
+  .gal-overlay{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(27,27,27, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: background .4s ease;
+  }
+		  
+  .revGallery-anchor:hover .gal-overlay{
+	background: rgba(27,27,27, 0);
+  }
+  
+  .nak-gallery {
+	display: block;
+	width: 100%;
+	position: relative;
+	margin-top: 30px;
+	box-sizing: border-box;
+  }
+  
+  .nak-gallery-poster{
+	padding-bottom:100%;
+	transform-origin: 50% 50%;
+	transform: scale(1, 1);
+	transition: all .4s ease;
+  }
+  
+  .revGallery-anchor:hover .nak-gallery-poster{
+	transform: scale(1.1, 1.1);
+  }
+  
+  .img-responsive{
+	display:none;
+  }
 
-@media (max-width: 768px) {
- 
+  .centerButtons {
+	display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .button{
+	-webkit-font-smoothing: antialiased;
+	transition: all .4s ease;
+	width: 200px;
+	height: 48px;
+	background-color:  #061421;
+	border-radius: 2px;
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+  }
+  
+  .button:hover {
+	background-color: #363636;
+	text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+	color: #fff;
+  }
+  
+  .button:active,
+  .button.is-checked {
+	background-color: #28F;
+  }
+  
+  .button.is-checked {
+	color: white;
+	text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+  }
+  
+  .button:active {
+	box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+  }
+  
+  
+  .revGallery-anchor-width1{
+	width: 40%
+  }
+  
+  .revGallery-anchor-width2{
+	width: 30%
+  }
+  
+  .revGallery-anchor-width3{
+	width: 20%
+  }
+  
+  .nak-gallery-height1{
+	padding-bottom: 400px
+  }
+  
+  .nak-gallery-height2{
+	padding-bottom: 300px
+  }
+  
+  .nak-gallery-height3{
+	padding-bottom: 200px
+  }
+  
+  .preloader{
+	display: none;
+  }
+  
+  .preloaderStyle{
+	background: red;
+	width: 100%;
+	height: 100px;
+  }
+
+  .px-row-polygon2 {
+    height: 200px;
+    background-color: #2d2d2d;
+    -webkit-clip-path: polygon(100% 100%, 0 100%, 100% 73%);
+    clip-path: polygon(100% 100%, -2% 100%, 100% 73%);
+    margin-top: -200px;
+    z-index: 999;
+    position: relative;
+    margin-bottom: -1px;
 }
-
