@@ -110,7 +110,7 @@ get_header(); ?>
     <section class="blogItems">
 
         <div class="container">
-            <h1 class="text-center titleheader">Our Blog</h1>
+            <h1 class="text-center titleheader">My Blog</h1>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
@@ -152,6 +152,10 @@ get_header(); ?>
     
     <script>
         jQuery(document).ready(function() {
+
+
+          //  jQuery(".firstSection").height(window.innerHeight + 'px');
+
 			var $gallery = jQuery('#gallery');
 			var $boxes = jQuery('.revGallery-anchor');
 			$boxes.hide(); 
