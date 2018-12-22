@@ -113,35 +113,32 @@ get_header(); ?>
             <h1 class="text-center titleheader">Our Blog</h1>
             <div class="row">
                 <div class="col-md-4">
-                <div class="card">
+                    <div class="card">
                     <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/05/blog1.png" alt="Deer in nature">
-                    <div class="card-img-overlay d-flex">
-                        <div class="my-auto mx-auto text-center">
-                            <h1 class="card-title">Web</h1>
-                        </div>
+                    <div class="card-img-overlay">
+                        <h1 class="card-title">Web</h1>
                     </div>
+                    <br/>
                     [display-posts author="Benn King"]
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
                         <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/05/blog3.png" alt="Deer in nature">
-                        <div class="card-img-overlay d-flex">
-                            <div class="my-auto mx-auto text-center">
-                                <h1 class="card-title">Tech</h1>
-                            </div>
+                        <div class="card-img-overlay">
+                             <h1 class="card-title">Tech</h1>
                         </div>
+                        <br/>
                         [display-posts author="Benn King"]
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
                         <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/05/blog3.png" alt="Deer in nature">
-                        <div class="card-img-overlay d-flex">
-                            <div class="my-auto mx-auto text-center">
-                                <h1 class="card-title">Misc</h1>
-                            </div>
+                        <div class="card-img-overlay">
+                            <h1 class="card-title">Misc</h1>
                         </div>
+                        <br/>
                         [display-posts author="Benn King"]
                     </div>
                 </div>
