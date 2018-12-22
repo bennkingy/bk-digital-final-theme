@@ -27,79 +27,79 @@ get_header(); ?>
             <button type="button" class="button" data-filter=".branding">BRANDING</button>
         </div>
         
-        <div class="nak-gallery nlg1" id="gallery">
-        <a href="../../wp-content/uploads/2018/12/cz.jpg" class="revGallery-anchor websites">
-            <img class="img-responsive" src="../../wp-content/uploads/2018/12/cz.jpg">
-            <div style="overflow:hidden">
-            <div class="nak-gallery-poster" style="background-image:url('../../wp-content/uploads/2018/12/cz.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
-            </div>
-            <div class="gal-overlay">
-            <div class="photo"></div>
-            </div>
-        </a>	
-        <a href="../../wp-content/uploads/2018/12/robHoffman.jpg" class="revGallery-anchor websites">
-            <img class="img-responsive" src="../../wp-content/uploads/2018/12/robHoffman.jpg">
-            <div style="overflow:hidden">
-            <div class="nak-gallery-poster" style="background-image:url('../../wp-content/uploads/2018/12/robHoffman.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
-            </div>
-            <div class="gal-overlay">
-            <div class="photo"></div>
-            </div>
-        </a>	
-        <a href="../../wp-content/uploads/2018/12/belcon-portfolio.jpg" class="revGallery-anchor websites">
-            <img class="img-responsive" src="../../wp-content/uploads/2018/12/belcon-portfolio.jpg">
-            <div style="overflow:hidden">
-            <div class="nak-gallery-poster" style="background-image:url('../../wp-content/uploads/2018/12/belcon-portfolio.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
-            </div>
-            <div class="gal-overlay">
-            <div class="photo"></div>
-            </div>
-        </a>	
-        <a href="../../wp-content/uploads/2018/12/Elements.jpg" class="revGallery-anchor websites">
-            <img class="img-responsive" src="../../wp-content/uploads/2018/12/Elements.jpg">
-            <div style="overflow:hidden">
-            <div class="nak-gallery-poster" style="background-image:url('../../wp-content/uploads/2018/12/Elements.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
-            </div>
-            <div class="gal-overlay">
-            <div class="photo"></div>
-            </div>
-        </a>
-        <a href="../../wp-content/uploads/2018/12/belcon-van.jpg" class="revGallery-anchor branding">
-            <img class="img-responsive" src="../../wp-content/uploads/2018/12/belcon-van.jpg">
-            <div style="overflow:hidden">
-            <div class="nak-gallery-poster" style="background-image:url('../../wp-content/uploads/2018/12/belcon-van.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
-            </div>
-            <div class="gal-overlay">
-            <div class="photo"></div>
-            </div>
-        </a>
-        <a href="../../wp-content/uploads/2018/12/AFF.jpg" class="revGallery-anchor logos branding">
-            <img class="img-responsive" src="../../wp-content/uploads/2018/12/AFF.jpg">
-            <div style="overflow:hidden">
-            <div class="nak-gallery-poster" style="background-image:url('../../wp-content/uploads/2018/12/AFF.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
-            </div>
-            <div class="gal-overlay">
-            <div class="photo"></div>
-            </div>
-        </a>	
-        <a href="../../wp-content/uploads/2018/12/Pyramid-Lofts.png" class="revGallery-anchor branding">
-            <img class="img-responsive" src="../../wp-content/uploads/2018/12/Pyramid-Lofts.png">
-            <div style="overflow:hidden">
-            <div class="nak-gallery-poster" style="background-image:url('../../wp-content/uploads/2018/12/Pyramid-Lofts.png');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
-            </div>
-            <div class="gal-overlay">
-            <div class="photo"></div>
-            </div>
-        </a>	
-        <a href="../../wp-content/uploads/2018/12/cpzinc.jpg" class="revGallery-anchor logos">
-            <img class="img-responsive" src="../../wp-content/uploads/2018/12/cpzinc.jpg">
-            <div style="overflow:hidden">
-            <div class="nak-gallery-poster" style="background-image:url('../../wp-content/uploads/2018/12/cpzinc.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
-            </div>
-            <div class="gal-overlay">
-            <div class="photo"></div>
-            </div>
-        </a>	
+        <div class="nak-gallery nlg1" id="gallery">	
+            <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/robHoffman.jpg" class="revGallery-anchor websites">
+                <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/robHoffman.jpg">
+                <div style="overflow:hidden">
+                <div class="nak-gallery-poster" style="background-image:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/robHoffman.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
+                </div>
+                <div class="gal-overlay">
+                <div class="photo"></div>
+                </div>
+            </a>
+            <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/Pyramid-Lofts.png" class="revGallery-anchor branding">
+                <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/Pyramid-Lofts.png">
+                <div style="overflow:hidden">
+                <div class="nak-gallery-poster" style="background-image:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/Pyramid-Lofts.png');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
+                </div>
+                <div class="gal-overlay">
+                <div class="photo"></div>
+                </div>
+            </a>	
+            <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/belcon-portfolio.jpg" class="revGallery-anchor websites">
+                <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/belcon-portfolio.jpg">
+                <div style="overflow:hidden">
+                <div class="nak-gallery-poster" style="background-image:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/belcon-portfolio.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
+                </div>
+                <div class="gal-overlay">
+                <div class="photo"></div>
+                </div>
+            </a>	
+            <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/cpzinc.jpg" class="revGallery-anchor logos">
+                <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/cpzinc.jpg">
+                <div style="overflow:hidden">
+                <div class="nak-gallery-poster" style="background-image:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/cpzinc.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
+                </div>
+                <div class="gal-overlay">
+                <div class="photo"></div>
+                </div>
+            </a>
+            <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/cz.jpg" class="revGallery-anchor websites">
+                <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/cz.jpg">
+                <div style="overflow:hidden">
+                <div class="nak-gallery-poster" style="background-image:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/cz.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
+                </div>
+                <div class="gal-overlay">
+                <div class="photo"></div>
+                </div>
+            </a>
+            <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/belcon-van.jpg" class="revGallery-anchor branding">
+                <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/belcon-van.jpg">
+                <div style="overflow:hidden">
+                <div class="nak-gallery-poster" style="background-image:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/belcon-van.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
+                </div>
+                <div class="gal-overlay">
+                <div class="photo"></div>
+                </div>
+            </a>
+            <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/Elements.jpg" class="revGallery-anchor websites">
+                <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/Elements.jpg">
+                <div style="overflow:hidden">
+                <div class="nak-gallery-poster" style="background-image:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/Elements.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
+                </div>
+                <div class="gal-overlay">
+                <div class="photo"></div>
+                </div>
+            </a>
+            <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/AFF.jpg" class="revGallery-anchor logos branding">
+                <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/AFF.jpg">
+                <div style="overflow:hidden">
+                <div class="nak-gallery-poster" style="background-image:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/AFF.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;"></div>
+                </div>
+                <div class="gal-overlay">
+                <div class="photo"></div>
+                </div>
+            </a>	
         </div>
 
     <div class="px-row-polygon2"></div>

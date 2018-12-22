@@ -545,7 +545,8 @@ h1 {
   .centerButtons {
 	display: flex;
     justify-content: center;
-    flex-direction: row;
+	flex-direction: row;
+	flex-wrap: wrap;
   
   .button{
 	-webkit-font-smoothing: antialiased;
