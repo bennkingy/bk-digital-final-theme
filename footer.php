@@ -31,7 +31,6 @@
 </div><!-- #page -->
 
 <!-- JS files -->
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/js/lightgallery-all.min.js'></script>
 <script src='https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js'></script>

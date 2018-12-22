@@ -1028,7 +1028,7 @@ h1 {
   width: 100%;
   height: 200px;
 }
-@media (max-width: 767px) {
+@media (max-width: 570px) {
   .firstSection__text-box .header__brand {
     height: 13rem;
   }
@@ -1191,10 +1191,9 @@ h1 {
 section.blogItems {
   background-color: #061421 !important;
   color: white;
-}
-.blogItems {
-  color: #fff f;
-  margin-bottom: -16px;
+  margin-top: -1px;
+  z-index: 2;
+  position: relative;
 }
 .blogItems h1.titleheader:before {
   content: 'Client focused blog posts';
@@ -1216,7 +1215,7 @@ section.blogItems {
   padding-bottom: 70px;
 }
 ul.display-posts-listing {
-  z-index: 999999;
+  z-index: 3;
   position: relative;
 }
 .blogItems .col-md-4 {
