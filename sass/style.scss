@@ -138,14 +138,19 @@ $color-grey-dark-3: #333;
 $color-white: #fff;
 $color-black: #000;
 
-body {background:green;}
-html {font-size:62.5%; }
-h1 {    font-size: 4em;
+body {
+	background:white;
+}
+html {
+	font-size:62.5%;
+}
+h1 {
+	font-size: 4em;
 	font-weight: 500;
 	margin: 0.67em 0;
 	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;}
-/* Fonts */
+	font-family: 'Raleway', sans-serif;
+}
 
 // Raleway font
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
@@ -312,7 +317,7 @@ h1 {    font-size: 4em;
 // Header Items
 .headerItems {
 	position:relative;
-	z-index: 999999999;
+	z-index: 2;
 
 	&__logo-box {
 		position: absolute;
@@ -391,7 +396,7 @@ h1 {    font-size: 4em;
 				 &.heading-primary--sub  {
 				  color: white;
 				  font-size: 4rem;
-				  margin-top: -4rem;
+				  margin-top: -3.7rem;
 			  }
 			}
 		}
@@ -414,10 +419,13 @@ h1 {    font-size: 4em;
 			   transform: translate3d(-1.6rem, 0, 0);
 			  }
 		   i {
-			  background: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/eye-1.svg');
+			  background: url('http://localhost:8888/wordpress/wp-content/uploads/2018/12/eye.svg');
 			  width: 28px;
 			  height: 28px;
 			  display: inline-block;
+			  margin-top: -0.2rem;
+			  background-repeat: no-repeat;
+			  background-position: center center;
 		   }
 		   > span {
 				   display: inline-block;
@@ -436,6 +444,7 @@ h1 {    font-size: 4em;
 					  transform: translateY(-50%);
 					  transition: all 300ms ease-out;
 					  will-change: right, opacity;
+
 				  }
 		  &:hover > span > i {
 							  opacity: 1;
@@ -456,3 +465,58 @@ h1 {    font-size: 4em;
 	}
   
 }
+
+// Portfolio
+.container-fluid.no-gutter {
+	padding: 0px;
+}
+.container-fluid.no-gutter .row [class*='col-']:not(:first-child),
+.container-fluid.no-gutter .row [class*='col-']:not(:last-child)
+{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row {
+   margin-left:0;
+   margin-right:0;
+}
+
+.item { 
+  border: none;
+}
+
+/* Isotope Transitions
+------------------------------- */
+.isotope,
+.isotope .item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+  
+  
+/* responsive media queries */
+
+@media (max-width: 768px) {
+ 
+}
+

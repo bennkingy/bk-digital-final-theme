@@ -31,3 +31,17 @@ figure {
 }
 
 @import "tables";
+
+.btn {
+    width: fit-content;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+}
