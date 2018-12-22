@@ -1141,7 +1141,7 @@ h1 {
   display: block;
   width: 100%;
   height: 100%;
-  background: rgba(27, 27, 27, 0.22);
+  background: rgba(27, 27, 27, 0.32);
   position: absolute;
   top: 0;
   left: 0;
@@ -1334,6 +1334,18 @@ ul.display-posts-listing {
 .img-fluid.card-img {
   min-width: 100%;
 }
+section.blogItems .card {
+  position: relative;
+}
+section.blogItems .card:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(2, 19, 37, 0.5), rgba(2, 19, 37, 0.6));
+}
 .card-img-overlay {
   position: absolute;
   top: 48%;
@@ -1385,6 +1397,7 @@ ul.display-posts-listing {
   width: 100%;
   height: 100%;
   margin-bottom: 11rem;
+  margin-top: -2rem;
 }
 .swiper-slide {
   text-align: center;
@@ -1402,6 +1415,7 @@ ul.display-posts-listing {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  margin-bottom: 4rem;
 }
 .swiper-pagination-bullet-active {
   background: #fff;
@@ -1414,4 +1428,67 @@ ul.display-posts-listing {
   position: relative;
   -webkit-clip-path: polygon(0 65%, 0% 100%, 102% 100%);
   clip-path: polygon(0 65%, 0% 100%, 102% 100%);
+}
+/****************** Deal Section
+ *********************************/
+#deal {
+  z-index: 999;
+  position: relative;
+  margin-top: -1px;
+  background: white;
+}
+#deal h1 {
+  color: #f36;
+}
+#timedown {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 30px;
+  z-index: 1;
+  text-align: center;
+  font-size: 12px;
+  color: #2d2d2d;
+  font-weight: 600;
+  font-family: "Raleway", arial, sans-serif;
+}
+#deal a.btn-black > span > i {
+  background: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/05/shopping-cart.png');
+  height: 18px;
+  display: inline-block;
+}
+#deal a.btn-black {
+  position: relative;
+}
+#deal a.btn-black > span {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  will-change: transform;
+}
+#deal a.btn-black:hover > span {
+  -webkit-transform: translate3d(-1rem, 0, 0);
+  transform: translate3d(-1rem, 0, 0);
+}
+#deal a.btn-black > span > i {
+  position: absolute;
+  width: 0.996em;
+  right: 0px;
+  right: 0rem;
+  opacity: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  will-change: right, opacity;
+}
+#deal a.btn-black:hover > span > i {
+  opacity: 1;
+  right: -2rem;
+}
+#demo {
+  font-weight: 700;
 }

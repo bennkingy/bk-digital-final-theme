@@ -118,8 +118,8 @@ get_header(); ?>
                     <div class="card-img-overlay">
                         <h1 class="card-title">Web</h1>
                     </div>
-                    <br/>
-                    [display-posts author="Benn King"]
+                <!--    <br/>
+                    [display-posts author="Benn King"] -->
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -128,18 +128,18 @@ get_header(); ?>
                         <div class="card-img-overlay">
                              <h1 class="card-title">Tech</h1>
                         </div>
-                        <br/>
-                        [display-posts author="Benn King"]
+                    <!--     <br/>
+                        [display-posts author="Benn King"]-->
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/05/blog3.png" alt="Deer in nature">
+                        <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/blog-3.jpg" alt="Deer in nature">
                         <div class="card-img-overlay">
                             <h1 class="card-title">Misc</h1>
                         </div>
-                        <br/>
-                        [display-posts author="Benn King"]
+              <!--           <br/>
+                        [display-posts author="Benn King"]-->
                     </div>
                 </div>
             </div>
@@ -166,6 +166,25 @@ get_header(); ?>
 
     </section>
     <div class="px-row-polygon3"></div>
+
+    <section id="deal">
+    <div class="container">
+        <div id="timedown">Deal runs out in: <span id="demo"></span></div>
+        <h1 class="text-center">All In One Package</h1>
+        <p class="lead text-center">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+        <ul class="justify-content-center">
+          <li class="list-inline-item">Website Design</li>
+          <li class="list-inline-item">Logo Design</li>    
+          <li class="list-inline-item">Hosting</li>
+          <li class="list-inline-item">Email</li> 
+          <li class="list-inline-item">Social</li>
+          <li class="list-inline-item">Support</li> 
+          <li class="list-inline-item">Branding</li>  
+        </ul>
+        <a class="btn btn-lg btn-black mx-auto d-block d-flex justify-content-center" href="#" role="button"><span>Buy Now<i class="shopping-cart"></i></span></a>
+    </div>
+
+    </section>
 
 		</main><!-- #main -->
     </div><!-- #primary -->
