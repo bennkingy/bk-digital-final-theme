@@ -1052,6 +1052,17 @@ h1 {
     font-size: 1.7rem;
   }
 }
+.sectionSection h1.titleheader:before {
+  content: 'I CREATE THINGS';
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 30px;
+  z-index: 1;
+  text-align: center;
+  font-size: 12px;
+}
 .revGallery-anchor, .gal-overlay, .nak-gallery-poster {
   box-sizing: border-box;
 }
@@ -1177,12 +1188,11 @@ h1 {
     width: calc(100% / 1);
   }
 }
-.blogItems {
-  background-color: #061421;
+section.blogItems {
+  background-color: #061421 !important;
   color: white;
 }
 .blogItems {
-  padding-top: 115px;
   color: #fff f;
   margin-bottom: -16px;
 }

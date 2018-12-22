@@ -492,6 +492,8 @@ h1 {
 }
 
 // Portfolio
+.sectionSection  h1.titleheader:before {content: 'I CREATE THINGS'; display: block; width: 100%; text-transform:uppercase; letter-spacing: 1px; height:30px;z-index: 1; text-align:center; font-size:12px; }
+
 .revGallery-anchor, .gal-overlay, .nak-gallery-poster{
 	box-sizing: border-box;
   }
@@ -655,7 +657,7 @@ section.blogItems {
 	color: white;
 }
 
-.blogItems  { padding-top: 115px; color: #ffff; margin-bottom:-16px;}
+.blogItems  { color: #ffff; margin-bottom:-16px;}
 .blogItems  h1.titleheader:before {content: 'Client focused blog posts'; display: block; width: 100%; text-transform:uppercase; letter-spacing: 1px; height:30px;z-index: 1; text-align:center; font-size:12px; }
 .blogsItems {background:#fff;padding-top:12px;position:relative;}
 .blogItems  > div > div {padding-bottom: 70px;}
