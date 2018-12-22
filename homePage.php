@@ -151,9 +151,9 @@ get_header(); ?>
     </div><!-- #primary -->
     
     <script>
-        $(document).ready(function() {
-			var $gallery = $('#gallery');
-			var $boxes = $('.revGallery-anchor');
+        jQuery(document).ready(function() {
+			var $gallery = jQuery('#gallery');
+			var $boxes = jQuery('.revGallery-anchor');
 			$boxes.hide(); 
 
 			$gallery.imagesLoaded( {background: true}, function() {
@@ -168,9 +168,9 @@ get_header(); ?>
 				});
 			});	
 
-		 	$('button').on( 'click', function() {
-		 		var filterValue = $(this).attr('data-filter');
-			  	$('#gallery').isotope({ filter: filterValue });
+            jQuery('button').on( 'click', function() {
+		 		var filterValue = jQuery(this).attr('data-filter');
+                 jQuery('#gallery').isotope({ filter: filterValue });
 			  	$gallery.data('lightGallery').destroy(true);
 			    $gallery.lightGallery({
 			      	selector: filterValue.replace('*','')
@@ -178,27 +178,27 @@ get_header(); ?>
 			});
         });
 
-        $(document).ready(function() {
-            $("#gallery").lightGallery({
+        jQuery(document).ready(function() {
+            jQuery("#gallery").lightGallery({
                     
              }); 
         });
 
         //button active mode
-        $('.button').click(function(){
-            $('.button').removeClass('is-checked');
-            $(this).addClass('is-checked');
+        jQuery('.button').click(function(){
+            jQuery('.button').removeClass('is-checked');
+            jQuery(this).addClass('is-checked');
         });
 
         //CSS Gram Filters on Mouse enter
-        $("#gallery a .nak-gallery-poster").addClass("inkwell");
+        jQuery("#gallery a .nak-gallery-poster").addClass("inkwell");
 
-        $("#gallery a").on({
+        jQuery("#gallery a").on({
             mouseenter : function() {
-                $(this).find(".nak-gallery-poster").removeClass("inkwell").addClass("walden");
+                jQuery(this).find(".nak-gallery-poster").removeClass("inkwell").addClass("walden");
             },
             mouseleave : function() {
-                $(this).find(".nak-gallery-poster").removeClass("walden").addClass("inkwell");
+                jQuery(this).find(".nak-gallery-poster").removeClass("walden").addClass("inkwell");
             }
         }); 
     </script>
