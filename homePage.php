@@ -114,7 +114,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                    <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/05/blog1.png" alt="Deer in nature">
+                    <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/blog2.jpg" alt="Deer in nature">
                     <div class="card-img-overlay">
                         <h1 class="card-title">Web</h1>
                     </div>
@@ -124,7 +124,7 @@ get_header(); ?>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/05/blog3.png" alt="Deer in nature">
+                        <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/blog1.jpg" alt="Deer in nature">
                         <div class="card-img-overlay">
                              <h1 class="card-title">Tech</h1>
                         </div>
@@ -149,7 +149,7 @@ get_header(); ?>
 
     <section id="clients">  
         <div class="container">
-            <h1 class="text-center titleheader">Our Clients</h2>
+            <h1 class="text-center titleheader">Clients</h2>
 
             <!-- Swiper -->
             <div class="swiper-container">

@@ -564,6 +564,7 @@ h1 {
 // Portfolio
 .sectionSection  h1 {
 	color: #061421;
+	text-rendering: geometricPrecision;
 }
 .sectionSection  h1.titleheader:before {content:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon.svg'); /* with class ModalCarrot ??*/
     position: relative;
@@ -605,13 +606,17 @@ h1 {
 	display: block;
 	width: 100%;
 	height: 100%;
-	background: rgba(27,27,27, 0.4);
+	background: rgba(27,27,27, 0.22);
 	position: absolute;
 	top: 0;
 	left: 0;
 	-webkit-transition: background .4s ease;
 	-o-transition: background .4s ease;
 	transition: background .4s ease;
+  }
+
+  @media (max-width: 450px) {
+	.gal-overlay{ background: none;}
   }
 		  
   .revGallery-anchor:hover .gal-overlay{
@@ -680,7 +685,8 @@ h1 {
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
 	font-size: 2rem;
-    font-weight: 500;
+	font-weight: 500;
+	cursor: pointer;
   }
   
   .button:hover {
@@ -775,6 +781,7 @@ section.blogItems {
 	position: relative;
 	padding-top: 3rem;
 }
+.blogItems h1 {text-rendering: geometricPrecision;}
 .blogItems  h1.titleheader:before {content:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon-white.svg'); /* with class ModalCarrot ??*/
     position: relative;
     z-index: 3;
@@ -817,8 +824,16 @@ ul.display-posts-listing{    z-index: 3;    position: relative;}
 
 /****************** Clients Section
 *********************************/
-#clients {background:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/05/clients-bg.png');padding-top: 4rem;}
-#clients h1 { color:#fff;}
+#clients {
+	background-image: linear-gradient(to top, rgba(2, 19, 37, 0.98), rgba(2, 19, 37, 0.65)), url(https://images.pexels.com/photos/236093/pexels-photo-236093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    padding-top: 4rem;
+    background-position: center center;
+	background-size: cover;
+}
+#clients h1 {
+	color:#fff;
+	text-rendering: geometricPrecision;
+}
 #clients h1.titleheader:before {content:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon-white.svg'); /* with class ModalCarrot ??*/
     position: relative;
     z-index: 3;
