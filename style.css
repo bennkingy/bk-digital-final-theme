@@ -1028,6 +1028,30 @@ h1 {
   width: 100%;
   height: 200px;
 }
+@media (max-width: 767px) {
+  .firstSection__text-box .header__brand {
+    height: 13rem;
+  }
+  .firstSection__text-box h1 span.heading-primary--main {
+    color: white;
+    letter-spacing: 1.7rem;
+    text-indent: 2.05rem;
+    font-size: 5rem;
+  }
+  .firstSection__text-box h1 span.heading-primary--sub {
+    color: white;
+    font-size: 2.5rem;
+    margin-top: -2rem;
+    letter-spacing: 0px;
+    text-indent: 9px;
+  }
+  .firstSection__text-box .btn--clear i {
+    margin-top: 0px;
+  }
+  .firstSection__text-box .btn--clear {
+    font-size: 1.7rem;
+  }
+}
 .revGallery-anchor, .gal-overlay, .nak-gallery-poster {
   box-sizing: border-box;
 }
@@ -1042,7 +1066,7 @@ h1 {
   display: block;
   width: 100%;
   height: 100%;
-  background: rgba(27, 27, 27, 0.6);
+  background: rgba(27, 27, 27, 0.4);
   position: absolute;
   top: 0;
   left: 0;
@@ -1075,32 +1099,26 @@ h1 {
   justify-content: center;
   flex-direction: row;
 }
-.button {
+.centerButtons .button {
   -webkit-font-smoothing: antialiased;
   transition: all 0.4s ease;
-  width: 200px;
-  height: 48px;
-  background-color: #061421;
+  width: auto;
   border-radius: 2px;
-  color: #fff;
+  color: #061421;
   letter-spacing: 2px;
+  background: none !important;
+  border: none !important;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
 }
-.button:hover {
-  background-color: #363636;
-  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
-  color: #fff;
+.centerButtons .button:hover {
+  color: #061421 !important;
+  text-shadow: none !important;
 }
-.button:active, .button.is-checked {
+.centerButtons .button:active, .centerButtons .button.is-checked {
   background-color: #28f;
-}
-.button.is-checked {
-  color: white;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
-}
-.button:active {
-  box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8);
 }
 .revGallery-anchor-width1 {
   width: 40%;
@@ -1137,4 +1155,22 @@ h1 {
   z-index: 999;
   position: relative;
   margin-bottom: -1px;
+}
+@media (max-width: 1024px) {
+  .revGallery-anchor {
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 767px) {
+  .revGallery-anchor {
+    width: calc(100% / 2);
+  }
+  .centerButtons .button {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 450px) {
+  .revGallery-anchor {
+    width: calc(100% / 1);
+  }
 }
