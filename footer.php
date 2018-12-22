@@ -32,7 +32,7 @@
 
 <!-- JS files -->
 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/index.min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/index.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/js/lightgallery-all.min.js'></script>
 <script src='https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js'></script>
 <script src='https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js'></script>
