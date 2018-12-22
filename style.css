@@ -768,7 +768,7 @@ embed, iframe, object {
  --------------------------------------------------------------*/
 /* Colours */
 body {
-  background: white;
+  background: white !important;
 }
 html {
   font-size: 62.5%;
@@ -1174,4 +1174,7 @@ h1 {
   .revGallery-anchor {
     width: calc(100% / 1);
   }
+}
+.blogItems {
+  background-color: #2d2d2d;
 }

@@ -139,7 +139,7 @@ $color-white: #fff;
 $color-black: #000;
 
 body {
-	background:white;
+	background:white !important;
 }
 html {
 	font-size:62.5%;
@@ -645,4 +645,9 @@ h1 {
 	.revGallery-anchor{
 		width: calc(100% / 1);
 	  }
+}
+
+// blog dsection
+.blogItems {
+	background-color: #2d2d2d;
 }
