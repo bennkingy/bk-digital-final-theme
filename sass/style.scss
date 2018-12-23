@@ -1107,71 +1107,118 @@ body.page-template footer {padding-top: 0.8rem;}
 	font-size: 1.9rem;
 }
 
-/// Sidebar
-aside#secondary {
 
-	.widget-title {
-		font-size: 2.8rem;
-		font-family: "Raleway",arial,sans-serif;
-		text-align: center;
-		text-transform: uppercase;
-		font-weight: 400;
-
-		&:before {
-			content:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon.svg'); /* with class ModalCarrot ??*/
-			position: relative;
-			z-index: 3;
-			left: -10px;
-		    top: -7px;
-            width: 16px;
-			display: inline-block;
-		}
-
-		&:after {
-			content:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon.svg'); /* with class ModalCarrot ??*/
-			position: relative;
-			z-index: 3;
-			right: -10px;
-		    top: -7px;
-   			width: 16px;
-			display: inline-block;
-			-moz-transform: scaleX(-1);
-			-o-transform: scaleX(-1);
-			-webkit-transform: scaleX(-1);
-			transform: scaleX(-1);
-			filter: FlipH;
-			-ms-filter: "FlipH";
-		}
-	}
-}
-
-
-// Services page
-.how-section1{
-    margin-top:-15%;
-    padding: 10%;
-}
-.how-section1 h4{
-    color: #ffa500;
-    font-weight: bold;
-    font-size: 30px;
-}
-.how-section1 .subheading{
-    color: #3931af;
-    font-size: 20px;
-}
-.how-section1 .row
-{
-    margin-top: 10%;
-}
-.how-img 
-{
+/* Side bar */
+aside#secondary .widget-title {
+	font-size: 2.8rem;
+	font-family: "Raleway", arial, sans-serif;
 	text-align: center;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.how-img img{
-	width: 40%;
-	max-width: 128px;
-}
+	text-transform: uppercase;
+	font-weight: 400;
+  }
+  aside#secondary .widget-title:before {
+	content: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon.svg');
+	position: relative;
+	/* with class ModalCarrot ??*/
+	z-index: 3;
+	left: -10px;
+	top: -7px;
+	width: 16px;
+	display: inline-block;
+  }
+  aside#secondary .widget-title:after {
+	content: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon.svg');
+	position: relative;
+	/* with class ModalCarrot ??*/
+	z-index: 3;
+	right: -10px;
+	top: -7px;
+	width: 16px;
+	display: inline-block;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+  }
+  aside#secondary ul {
+	  font-size: 1.8rem;
+	  font-family: "Raleway",arial,sans-serif;
+	  text-align: center;
+	  text-transform: uppercase;
+	  font-weight: 400;
+	  list-style-type: none;
+	  padding: 0px;
+	  margin: 0px;
+	  text-decoration: underline;
+	  margin:0px;
+	  padding:0px;
+  }
+  aside#secondary ul li a {
+	color: #061421
+  }
+  aside#secondary input {
+	width: 100%;
+  }
+  aside#secondary input:not([type="submit"]):focus,
+  textarea:focus {
+	border: 0;
+	box-shadow: none;
+	-moz-appearance: none;
+	outline: 0px none transparent;
+  }
+  aside#secondary input::-webkit-input-placeholder,
+  aside#secondary textarea::-webkit-input-placeholder {
+	color: #222;
+	-webkit-transition: text-indent 0.5s ease, color 0.5s ease;
+  }
+  aside#secondary input::-moz-placeholder,
+  aside#secondary textarea::-moz-placeholder {
+	color: #222;
+	opacity: 1;
+	-webkit-transition: text-indent 0.5s ease, color 0.5s ease;
+  }
+  aside#secondary [placeholder]:focus::-webkit-input-placeholder {
+	text-indent: 10em;
+	color: transparent;
+  }
+  aside#secondary [placeholder]:focus::-webkit-textarea-placeholder {
+	text-indent: 10em;
+	color: transparent;
+  }
+
+/* services */
+@media only screen and (min-width: 768px) {
+	.loTable .tableCell {
+		display: table-cell;
+		height: 100%;
+		vertical-align: middle;
+		float: none;
+		overflow: hidden;
+	}
+	.loTable .halfImg {
+	  min-height: 500px;
+	  max-width: 180%;
+	  min-width: 100%;
+	  vertical-align: bottom;
+	  display: block;
+	  position: relative;
+	  left: 50%;
+	  -webkit-transform: translateX(-50%);
+	  -moz-transform: translateX(-50%);
+	  -ms-transform: translateX(-50%);
+	  -o-transform: translateX(-50%);
+	  transform: translateX(-50%);
+	}
+	}
+	.half {
+	  padding: 0px 0;
+	  display: table;
+	  table-layout: fixed;
+	  width: 100%;
+	}
+	
+	.lowlightbg {
+	  background-color: #192733;
+	}

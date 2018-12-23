@@ -1718,6 +1718,32 @@ aside#secondary ul li a {
 aside#secondary input {
   width: 100%;
 }
+aside#secondary input:not([type="submit"]):focus,
+aside#secondary textarea:focus {
+  border: 0;
+  box-shadow: none;
+  -moz-appearance: none;
+  outline: 0px none transparent;
+}
+aside#secondary input::-webkit-input-placeholder,
+aside#secondary textarea::-webkit-input-placeholder {
+  color: #222;
+  -webkit-transition: text-indent 0.5s ease, color 0.5s ease;
+}
+aside#secondary input::-moz-placeholder,
+aside#secondary textarea::-moz-placeholder {
+  color: #222;
+  opacity: 1;
+  -webkit-transition: text-indent 0.5s ease, color 0.5s ease;
+}
+aside#secondary [placeholder]:focus::-webkit-input-placeholder {
+  text-indent: 10em;
+  color: transparent;
+}
+aside#secondary [placeholder]:focus::-webkit-textarea-placeholder {
+  text-indent: 10em;
+  color: transparent;
+}
 
 /* services */
 @media only screen and (min-width: 768px) {
