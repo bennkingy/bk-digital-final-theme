@@ -1617,6 +1617,7 @@ footer #logofooter {
   display: block;
   text-align: center;
   padding-top: 21vh;
+  text-rendering: geometricPrecision;
   padding-bottom: 3vh;
   margin-top: 0px;
 }

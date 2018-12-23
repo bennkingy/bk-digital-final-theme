@@ -1064,7 +1064,7 @@ list-style-type: none;
 .px-row-polygon5 {height: 200px; background-color: #ffffff; -webkit-clip-path: polygon(34% 82%, 65% 54%, 100% 84%, 100% 100%, 0 100%, 12% 62%); clip-path: polygon(34% 82%, 65% 54%, 100% 84%, 100% 100%, 0 100%, 12% 62%);margin-top:-200px;    z-index: 1;
     position: relative; }
 	.entry-header2 > h1 {display: block;    text-align: center;
-    padding-top: 21vh;
+    padding-top: 21vh;text-rendering: geometricPrecision;
 	padding-bottom: 3vh;margin-top:0px;}    
 	
 	.entry-header2 > h1:before {
