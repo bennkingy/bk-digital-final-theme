@@ -1699,7 +1699,22 @@ aside#secondary .widget-title:after {
   filter: FlipH;
   -ms-filter: "FlipH";
 }
-
+aside#secondary ul {
+    font-size: 1.8rem;
+    font-family: "Raleway",arial,sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: underline;
+    margin:0px;
+    padding:0px;
+}
+aside#secondary ul li a {
+  color: #061421
+}
 /* services */
 @media only screen and (min-width: 768px) {
 .loTable .tableCell {
