@@ -152,7 +152,7 @@ h1 {
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
 }
-h1,h2,h3,h4,h5 {
+#primary h1,#primary h2, #primary h3,#primary h4, #primary h5 {
 	color: #061421;
 }
 
@@ -1069,7 +1069,7 @@ list-style-type: none;
     position: relative; }
 	.entry-header2 > h1 {display: block;    text-align: center;
     padding-top: 21vh;text-rendering: geometricPrecision;
-	padding-bottom: 3vh;margin-top:0px;}    
+	padding-bottom: 3vh;margin-top:0px;    font-weight: 400;}    
 	
 	.entry-header2 > h1:before {
 		content:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon-white.svg'); /* with class ModalCarrot ??*/
@@ -1111,17 +1111,19 @@ body.page-template footer {padding-top: 0.8rem;}
 aside#secondary {
 
 	.widget-title {
-		font-size: 4em;
+		font-size: 2.8rem;
 		font-family: "Raleway",arial,sans-serif;
 		text-align: center;
+		text-transform: uppercase;
+		font-weight: 400;
 
 		&:before {
 			content:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon.svg'); /* with class ModalCarrot ??*/
 			position: relative;
 			z-index: 3;
 			left: -10px;
-			top: -9px;
-			width: 20px;
+		    top: -7px;
+            width: 16px;
 			display: inline-block;
 		}
 
@@ -1130,8 +1132,8 @@ aside#secondary {
 			position: relative;
 			z-index: 3;
 			right: -10px;
-			top: -9px;
-			width: 20px;
+		    top: -7px;
+   			width: 16px;
 			display: inline-block;
 			-moz-transform: scaleX(-1);
 			-o-transform: scaleX(-1);
@@ -1141,4 +1143,35 @@ aside#secondary {
 			-ms-filter: "FlipH";
 		}
 	}
+}
+
+
+// Services page
+.how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+    color: #3931af;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 10%;
+}
+.how-img 
+{
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.how-img img{
+	width: 40%;
+	max-width: 128px;
 }
