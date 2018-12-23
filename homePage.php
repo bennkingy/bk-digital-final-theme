@@ -181,8 +181,10 @@ get_header(); ?>
           <li class="list-inline-item">Support</li> 
           <li class="list-inline-item">Branding</li>  
         </ul>
-        <a class="btn btn-lg btn-black mx-auto d-block d-flex justify-content-center" href="#" role="button"><span>Buy Now<i class="shopping-cart"></i></span></a>
-    -->
+
+-->
+    <!-- <a class="btn btn--clear btn-black" href="#" role="button"><span>Buy Now<i class="shopping-cart"></i></span></a>
+-->
     </div>
 
     </section>

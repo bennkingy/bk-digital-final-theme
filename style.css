@@ -824,7 +824,7 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: -1;
   opacity: 0;
   width: 0;
   -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -886,6 +886,7 @@ h1 {
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%;
+  z-index: 2;
 }
 .navigation__icon {
   position: relative;
@@ -967,9 +968,11 @@ h1 {
   }
 }
 .firstSection__text-box {
+  z-index: 1;
   position: absolute;
-  top: 48%;
+  top: 49%;
   left: 50%;
+  width: 100%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -1014,6 +1017,8 @@ h1 {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   font-weight: 400;
+  border: 2PX SOLID WHITE;
+  border-radius: 5px;
 }
 .firstSection__text-box .btn--clear:hover {
   padding: 1.3rem 3.3rem;
@@ -1483,45 +1488,6 @@ section.blogItems .card:before {
   margin-bottom: -4rem;
   margin-top: 4rem;
 }
-#deal a.btn-black > span > i {
-  background: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/05/shopping-cart.png');
-  height: 18px;
-  display: inline-block;
-}
-#deal a.btn-black {
-  position: relative;
-}
-#deal a.btn-black > span {
-  display: inline-block;
-  position: relative;
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-  will-change: transform;
-}
-#deal a.btn-black:hover > span {
-  -webkit-transform: translate3d(-1rem, 0, 0);
-  transform: translate3d(-1rem, 0, 0);
-}
-#deal a.btn-black > span > i {
-  position: absolute;
-  width: 0.996em;
-  right: 0px;
-  right: 0rem;
-  opacity: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-  will-change: right, opacity;
-}
-#deal a.btn-black:hover > span > i {
-  opacity: 1;
-  right: -2rem;
-}
-#demo {
-  font-weight: 700;
-}
 /****************** Footer Section
  *********************************/
 .px-row-polygon4 {
@@ -1565,6 +1531,9 @@ footer #logofooter {
   float: left;
   list-style-type: none;
 }
+#socials li:last-child svg {
+  margin-right: 0px;
+}
 #socials {
   margin-bottom: 37px;
   float: right;
@@ -1590,11 +1559,30 @@ footer #logofooter {
 @media (max-width: 767px) {
   #colophon > div {
     text-align: center;
+    float: none;
   }
   #socials {
     margin-top: 49px;
   }
-  #socials svg:last-of-type {
+  #socials li:last-of-type {
     margin-right: 0px;
+  }
+  #logofooter {
+    float: none !important;
+  }
+  .site-info {
+    float: none;
+  }
+  #socials {
+    margin-left: 0px;
+    display: inline-block;
+    float: none;
+    padding-inline-start: 0px;
+  }
+  #socials li {
+    margin-right: 20px;
+  }
+  footer #logofooter {
+    width: 255px;
   }
 }
