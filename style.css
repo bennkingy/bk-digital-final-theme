@@ -1650,9 +1650,14 @@ footer #logofooter {
 body.page-template footer {
   padding-top: 0.8rem;
 }
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-  h1 {
-    font-size: 3.5rem;
-  }
+.mainContent {
+  padding: 4rem;
 }
+.mainContent p {
+  font-family: "Poppins", arial, sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.9rem;
+}
+/* Extra small devices (portrait phones, less than 576px) 
+ @media (max-width: 575.98px) { h1 {font-size: 3.5rem;} }*/
