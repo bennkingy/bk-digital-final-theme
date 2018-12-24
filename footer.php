@@ -72,6 +72,7 @@
 <script src='https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js'></script>
 <script src='https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
+<script src="<?php echo get_template_directory_uri(); ?>/css3-animate-it.js"></script>
 
 <?php wp_footer(); ?>
 

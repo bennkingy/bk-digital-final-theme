@@ -6,30 +6,30 @@ get_header(); ?>
 
     <section class="firstSection"> 
 
-        <div class="firstSection__text-box">
+        <div class="firstSection__text-box animatedParent" data-sequence="500">
             <img src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/bk-no-text.svg" alt="Logo" class="header__brand">
             <h1 class="heading-primary">
-                <span class="heading-primary--main"><span class="heading-primary--main--bk">BK</span>Digital</span>
-                <span class="heading-primary--sub">Websites & branding</span>
+                <span class="heading-primary--main animated fadeIn" data-id='1'><span class="heading-primary--main--bk">BK</span>Digital</span>
+                <span class="heading-primary--sub animated fadeIn" data-id='2'>Websites & branding</span>
             </h1>
-            <a href="#" class="btn btn--clear"><span>View portfolio<i class="eye-icon"></i></span></a>
+            <a href="#" class="btn btn--clear animated fadeIn delay-250" data-id='3'><span>View portfolio<i class="eye-icon"></i></span></a>
         </div> 
         <div class="px-row-polygon"></div>
 
     </section>
 
     <section class="sectionSection">
+    <div class="animatedParent" data-sequence="400">
+        <h1 class="text-center titleheader animated fadeIn" data-id='1'>PORTFOLIO</h1>
 
-        <h1 class="text-center titleheader">PORTFOLIO</h1>
-
-        <div class="centerButtons">
+        <div class="centerButtons animated fadeIn" data-id='2'>
             <button type="button" class="button is-checked" data-filter="">ALL</button>
             <button type="button" class="button" data-filter=".websites">WEBSITES</button>
             <button type="button" class="button" data-filter=".logos">LOGOS</button>
             <button type="button" class="button" data-filter=".branding">BRANDING</button>
         </div>
-        
-        <div class="nak-gallery nlg1" id="gallery">	
+
+        <div class="nak-gallery nlg1 animated fadeInUp" data-id='3' id="gallery">	
             <a href="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/belcon-portfolio.jpg" class="revGallery-anchor websites">
                 <img class="img-responsive" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/belcon-portfolio.jpg">
                 <div style="overflow:hidden">
@@ -104,15 +104,19 @@ get_header(); ?>
             </a>	
         </div>
 
+        </div>  
+
     <div class="px-row-polygon2"></div>
     </section>
 
     <section class="blogItems">
 
         <div class="container">
-            <h1 class="text-center titleheader">BLOG</h1>
-            <div class="row">
-                <div class="col-md-4">
+            <div class="animatedParent animateOnce">
+            <h1 class="text-center titleheader animated fadeIn animateOnce">BLOG</h1>
+            </div>
+            <div class="row animatedParent animateOnce" data-sequence="500">
+                <div class="col-md-4 animated fadeIn" data-id='1'>
                     <div class="card">
                     <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/blog2.jpg" alt="Deer in nature">
                     <div class="card-img-overlay">
@@ -122,7 +126,7 @@ get_header(); ?>
                     [display-posts author="Benn King"] -->
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 animated fadeIn" data-id='2'>
                     <div class="card">
                         <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/blog1.jpg" alt="Deer in nature">
                         <div class="card-img-overlay">
@@ -132,7 +136,7 @@ get_header(); ?>
                         [display-posts author="Benn King"]-->
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 animated fadeIn" data-id='3'>
                     <div class="card">
                         <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/blog-3.jpg" alt="Deer in nature">
                         <div class="card-img-overlay">

@@ -1664,7 +1664,6 @@ body.page-template footer {
   -webkit-font-smoothing: antialiased;
   font-size: 1.9rem;
 }
-
 /* Side bar */
 aside#secondary .widget-title {
   font-size: 2.8rem;
@@ -1700,38 +1699,35 @@ aside#secondary .widget-title:after {
   -ms-filter: "FlipH";
 }
 aside#secondary ul {
-    font-size: 1.8rem;
-    font-family: "Raleway",arial,sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 400;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    text-decoration: underline;
-    margin:0px;
-    padding:0px;
+  font-size: 1.8rem;
+  font-family: "Raleway", arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: underline;
+  margin: 0px;
+  padding: 0px;
 }
 aside#secondary ul li a {
-  color: #061421
+  color: #061421;
 }
 aside#secondary input {
   width: 100%;
 }
-aside#secondary input:not([type="submit"]):focus,
-aside#secondary textarea:focus {
+aside#secondary input:not([type="submit"]):focus, textarea:focus {
   border: 0;
   box-shadow: none;
   -moz-appearance: none;
   outline: 0px none transparent;
 }
-aside#secondary input::-webkit-input-placeholder,
-aside#secondary textarea::-webkit-input-placeholder {
+aside#secondary input::-webkit-input-placeholder, aside#secondary textarea::-webkit-input-placeholder {
   color: #222;
   -webkit-transition: text-indent 0.5s ease, color 0.5s ease;
 }
-aside#secondary input::-moz-placeholder,
-aside#secondary textarea::-moz-placeholder {
+aside#secondary input::-moz-placeholder, aside#secondary textarea::-moz-placeholder {
   color: #222;
   opacity: 1;
   -webkit-transition: text-indent 0.5s ease, color 0.5s ease;
@@ -1744,30 +1740,29 @@ aside#secondary [placeholder]:focus::-webkit-textarea-placeholder {
   text-indent: 10em;
   color: transparent;
 }
-
 /* services */
 @media only screen and (min-width: 768px) {
-.loTable .tableCell {
+  .loTable .tableCell {
     display: table-cell;
     height: 100%;
     vertical-align: middle;
     float: none;
     overflow: hidden;
-}
-.loTable .halfImg {
-  min-height: 500px;
-  max-width: 180%;
-  min-width: 100%;
-  vertical-align: bottom;
-  display: block;
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
+  }
+  .loTable .halfImg {
+    min-height: 500px;
+    max-width: 180%;
+    min-width: 100%;
+    vertical-align: bottom;
+    display: block;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
 .half {
   padding: 0px 0;
@@ -1775,7 +1770,6 @@ aside#secondary [placeholder]:focus::-webkit-textarea-placeholder {
   table-layout: fixed;
   width: 100%;
 }
-
 .lowlightbg {
   background-color: #192733;
 }
