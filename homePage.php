@@ -7,12 +7,12 @@ get_header(); ?>
     <section class="firstSection"> 
 
         <div class="firstSection__text-box animatedParent animateOnce">
-            <img src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/bk-no-text.svg" alt="Logo" class="header__brand animated fadeIn animateOnce delay-750">
-            <h1 class="heading-primary animated fadeIn animateOnce delay-1250">
+            <img src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/bk-no-text.svg" alt="Logo" class="header__brand animated fadeIn animateOnce delay-1000">
+            <h1 class="heading-primary animated fadeIn animateOnce delay-1500">
                 <span class="heading-primary--main"><span class="heading-primary--main--bk">BK</span>Digital</span>
                 <span class="heading-primary--sub">Websites & branding</span>
             </h1>
-            <div  class="animated fadeInUpShort delay-1750 animateOnce"><a href="#" class="btn btn--clear"><span>View portfolio<i class="eye-icon"></i></span></a></div>
+            <div  class="animated fadeInUpShort delay-2000 animateOnce"><a href="#" class="btn btn--clear"><span>View portfolio<i class="eye-icon"></i></span></a></div>
         </div> 
         <div class="px-row-polygon"></div>
 
