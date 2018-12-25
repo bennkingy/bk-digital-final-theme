@@ -6,20 +6,20 @@ get_header(); ?>
 
     <section class="firstSection"> 
 
-        <div class="firstSection__text-box animatedParent animateOnce" data-sequence="500">
-            <img src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/bk-no-text.svg" alt="Logo" class="header__brand animated fadeIn animateOnce" data-id='1'>
-            <h1 class="heading-primary">
-                <span class="heading-primary--main animated fadeIn animateOnce" data-id='2'><span class="heading-primary--main--bk">BK</span>Digital</span>
-                <span class="heading-primary--sub animated fadeIn animateOnce" data-id='3'>Websites & branding</span>
+        <div class="firstSection__text-box animatedParent animateOnce">
+            <img src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/bk-no-text.svg" alt="Logo" class="header__brand animated fadeIn animateOnce delay-750">
+            <h1 class="heading-primary animated fadeIn animateOnce delay-1250">
+                <span class="heading-primary--main"><span class="heading-primary--main--bk">BK</span>Digital</span>
+                <span class="heading-primary--sub">Websites & branding</span>
             </h1>
-            <a href="#" class="btn btn--clear animated fadeIn delay-200 animateOnce" data-id='4'><span>View portfolio<i class="eye-icon"></i></span></a>
+            <div  class="animated fadeInUpShort delay-1750 animateOnce"><a href="#" class="btn btn--clear"><span>View portfolio<i class="eye-icon"></i></span></a></div>
         </div> 
         <div class="px-row-polygon"></div>
 
     </section>
 
     <section class="sectionSection">
-    <div class="animatedParent animateOnce" data-sequence="400">
+    <div class="animatedParent animateOnce" data-sequence="400" data-appear-top-offset="-150">
         <h1 class="text-center titleheader animated fadeIn animateOnce" data-id='1'>PORTFOLIO</h1>
 
         <div class="centerButtons animated fadeIn animateOnce" data-id='2'>
@@ -111,12 +111,12 @@ get_header(); ?>
 
     <section class="blogItems">
 
-        <div class="container">
-            <div class="animatedParent animateOnce">
-            <h1 class="text-center titleheader animated fadeIn animateOnce">BLOG</h1>
+        <div class="container animatedParent animateOnce" data-sequence="400">
+            <div>
+            <h1 class="text-center titleheader animated fadeIn animateOnce" data-id='1'>BLOG</h1>
             </div>
-            <div class="row animatedParent animateOnce" data-sequence="500">
-                <div class="col-md-4 animated fadeIn" data-id='1'>
+            <div class="row">
+                <div class="col-md-4 animated fadeIn animateOnce" data-id='2'>
                     <div class="card">
                     <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/blog2.jpg" alt="Deer in nature">
                     <div class="card-img-overlay">
@@ -126,7 +126,7 @@ get_header(); ?>
                     [display-posts author="Benn King"] -->
                     </div>
                 </div>
-                <div class="col-md-4 animated fadeIn" data-id='2'>
+                <div class="col-md-4 animated fadeIn animateOnce" data-id='3'>
                     <div class="card">
                         <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/blog1.jpg" alt="Deer in nature">
                         <div class="card-img-overlay">
@@ -136,7 +136,7 @@ get_header(); ?>
                         [display-posts author="Benn King"]-->
                     </div>
                 </div>
-                <div class="col-md-4 animated fadeIn" data-id='3'>
+                <div class="col-md-4 animated fadeIn animateOnce" data-id='4'>
                     <div class="card">
                         <img class="img-fluid card-img" src="https://www.bkdigital.co.uk/wp-content/uploads/2018/12/blog-3.jpg" alt="Deer in nature">
                         <div class="card-img-overlay">
@@ -152,11 +152,11 @@ get_header(); ?>
     </section>
 
     <section id="clients">  
-        <div class="container">
-            <h1 class="text-center titleheader">Clients</h2>
+        <div class="container animatedParent animateOnce" data-sequence="400" data-appear-top-offset="-150">
+            <h1 class="text-center titleheader animated fadeIn animateOnce" data-id='1'>Clients</h2>
 
             <!-- Swiper -->
-            <div class="swiper-container">
+            <div class="swiper-container titleheader animated fadeIn animateOnce" data-id='2'>
                 <div class="swiper-wrapper" style="align-items: center;">
                 <div class="swiper-slide"><img src="https://www.bkdigital.co.uk/wp-content/uploads/2018/05/bar-logo-300x58.png" alt="bar logo" width="300" height="58" class="aligncenter size-medium wp-image-2542" /></div>
                 <div class="swiper-slide"><img src="https://www.bkdigital.co.uk/wp-content/uploads/2018/05/belcon-logo.png" alt="belcon logo" width="250" height="78" class="aligncenter size-full wp-image-2547" /></div>
@@ -164,7 +164,7 @@ get_header(); ?>
                 <div class="swiper-slide"><img src="https://www.bkdigital.co.uk/wp-content/uploads/2018/05/wildcard-logo.png" alt="wildcard logo" width="256" height="212" class="aligncenter size-full wp-image-2549" style="max-width:150px;" /></div>
                 </div>
                 <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination animated fadeIn animateOnce" data-id='3'></div>
             </div>
          </div>
 
@@ -172,10 +172,11 @@ get_header(); ?>
     <div class="px-row-polygon3"></div>
 
     <section id="deal">
+    <div class="animatedParent animateOnce" data-sequence="400" data-appear-top-offset="-150">
     <div class="container">
-        <div id="timedown">Deal runs out in: <span id="demo"></span></div>
-        <h1 class="text-center">All In One Package</h1>
-        <p class="lead text-center">I will soon be offering a all in one package offering branding, website design, logo design, hosting, email, support and hosting for a year.</p>
+        <div id="timedown" class='animated fadeIn animateOnce' data-id='1'>Deal runs out in: <span id="demo"></span></div>
+        <div class='animated fadeIn animateOnce' data-id='2'><h1 class="text-center">All In One Package</h1></div>
+        <div class='animated fadeIn animateOnce' data-id='3'><p class="lead text-center">I will soon be offering a all in one package offering branding, website design, logo design, hosting, email, support and hosting for a year.</p></div>
     <!--      <ul class="justify-content-center">
           <li class="list-inline-item">Website Design</li>
           <li class="list-inline-item">Logo Design</li>    
@@ -190,7 +191,7 @@ get_header(); ?>
     <!-- <a class="btn btn--clear btn-black" href="#" role="button"><span>Buy Now<i class="shopping-cart"></i></span></a>
 -->
     </div>
-
+</div>
     </section>
 
 		</main><!-- #main -->

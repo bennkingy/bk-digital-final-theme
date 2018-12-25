@@ -33,7 +33,7 @@
 
 	<header id="masthead" class="site-header headerItems animatedParent animateOnce" data-sequence="500">
 
-		<div class="site-branding animated fadeIn animateOnce"  data-id='1'>
+		<div class="site-branding animated fadeInLeft animateOnce"  data-id='1'>
 			<div class="headerItems__logo-box">
 			<?php
             the_custom_logo();
@@ -41,7 +41,7 @@
 			</div>
 		</div><!-- .site-branding -->
 
-		<div class="navigation animated fadeIn animateOnce"  data-id='1'>
+		<div class="navigation animated fadeInRight animateOnce"  data-id='1'>
 			<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 			<label for="navi-toggle" class="navigation__button">
 				<span class="navigation__icon">&nbsp;</span>
