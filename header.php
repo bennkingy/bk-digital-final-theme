@@ -60,4 +60,32 @@
 		
 	</header><!-- #masthead -->
 
+	
+	<script>
+	// If mobile menu open, disable page scroll
+	$(document).ready(function() {
+
+		$('.navigation__button').click(function() {
+
+			if ($('.navigation__checkbox:checkbox:checked').length > 0) {
+
+				$('html, body').css({
+					overflow: 'initial',
+					height: 'initial'
+				});
+			}
+			else {
+
+				$('html, body').css({
+					overflow: 'hidden',
+					height: '100%'
+				});
+			
+			}
+
+			});
+		
+	});
+	</script>
+
 	<div id="content" class="site-content">
