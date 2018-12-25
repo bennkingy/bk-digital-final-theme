@@ -1295,6 +1295,7 @@ section.blogItems {
   z-index: 2;
   position: relative;
   padding-top: 3rem;
+  padding-bottom: 7rem;
 }
 .blogItems h1 {
   text-rendering: geometricPrecision;
@@ -1329,9 +1330,6 @@ section.blogItems {
   background: #fff;
   padding-top: 12px;
   position: relative;
-}
-.blogItems > div > div {
-  padding-bottom: 70px;
 }
 ul.display-posts-listing {
   z-index: 3;

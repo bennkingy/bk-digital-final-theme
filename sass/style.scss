@@ -789,6 +789,7 @@ section.blogItems {
     z-index: 2;
 	position: relative;
 	padding-top: 3rem;
+	padding-bottom: 7rem;
 }
 .blogItems h1 {text-rendering: geometricPrecision;}
 .blogItems  h1.titleheader:before {content:url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon-white.svg'); /* with class ModalCarrot ??*/
@@ -813,7 +814,6 @@ section.blogItems {
 	filter: FlipH;
 	-ms-filter: "FlipH";
 }.blogsItems {background:#fff;padding-top:12px;position:relative;}
-.blogItems  > div > div {padding-bottom: 70px;}
 ul.display-posts-listing{    z-index: 3;    position: relative;} 
 
 .blogItems .col-md-4 {
