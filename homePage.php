@@ -111,7 +111,7 @@ get_header(); ?>
 
     <section class="blogItems">
 
-        <div class="container animatedParent animateOnce" data-sequence="400">
+        <div class="container animatedParent animateOnce" data-sequence="400"  data-appear-top-offset="-150">
             <div>
             <h1 class="text-center titleheader animated fadeIn animateOnce" data-id='1'>BLOG</h1>
             </div>
