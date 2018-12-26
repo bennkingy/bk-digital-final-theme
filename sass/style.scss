@@ -343,6 +343,7 @@ h1 {
   }
 
 // Header Items
+#masthead {    transition: all .5s ease-in-out;background:transparent;}
 .headerItems {
 	position:relative;
 	z-index: 2;
@@ -364,7 +365,31 @@ h1 {
 
 }
 
-// First Section
+// Header Animation
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    background: #2cbf84;
+	height: 150px;
+}
+#masthead.sticky .navigation__background {
+    top: 2.5rem;
+	right: 2.5rem;
+	transition: all .5s ease-in-out;
+}
+#masthead.sticky .navigation__button {
+    top: 1.9rem;
+	right: 2rem;
+	transition: all .5s ease-in-out;
+}
+
+// First section
 .firstSection{
 	height: 100vh;
 	background-image: -webkit-gradient(

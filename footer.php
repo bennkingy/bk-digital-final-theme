@@ -66,6 +66,21 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("masthead");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
 <!-- JS files -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/js/lightgallery-all.min.js'></script>

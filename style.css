@@ -938,6 +938,10 @@ h1 {
   -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
+#masthead {
+  transition: all 0.5s ease-in-out;
+  background: transparent;
+}
 .headerItems {
   position: relative;
   z-index: 2;
@@ -952,6 +956,28 @@ h1 {
 }
 .headerItems__logo {
   height: 7rem;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #2cbf84;
+  height: 150px;
+}
+#masthead.sticky .navigation__background {
+  top: 2.5rem;
+  right: 2.5rem;
+  transition: all 0.5s ease-in-out;
+}
+#masthead.sticky .navigation__button {
+  top: 1.9rem;
+  right: 2rem;
+  transition: all 0.5s ease-in-out;
 }
 .firstSection {
   height: 100vh;
