@@ -1183,13 +1183,44 @@ aside#secondary .widget-title {
 
 .wpcf7-form {
 	font-family: "Raleway",arial,sans-serif;
+	text-align: center;
 }
-aside#secondary input, aside#secondary textarea {
+aside#secondary input {
 	width: 100%;
 	border: none;
     border-bottom: 2px solid #061421;
 	border-radius: 0px;
 	color: #061421;
+	text-align: center;
+}
+aside#secondary input[type="submit"] {
+	width: 100%;
+	background:#061421;
+    border: 2px solid #061421;
+	border-radius: 0px;
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+    font-size: 1.7rem;
+	font-family: "Raleway",arial,sans-serif;
+    min-height: 40px;
+}
+aside#secondary textarea {
+	width: 100%;
+	border: none;
+    border-bottom: 2px solid #061421;
+	border-radius: 0px;
+	color: #061421;
+	text-align:left;
+}
+@media (max-width:767px) {
+	aside#secondary{
+		MARGIN-TOP: -7REM;
+		MARGIN-BOTTOM: -5REM;
+	}
+	.mainContent {
+		padding-top: 1rem;
+	}
 }
 
 

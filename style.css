@@ -1736,9 +1736,35 @@ aside#secondary ul li a {
 }
 .wpcf7-form {
   font-family: "Raleway", arial, sans-serif;
+  text-align: center;
 }
 aside#secondary input {
   width: 100%;
+  border: none;
+  border-bottom: 2px solid #061421;
+  border-radius: 0px;
+  color: #061421;
+  text-align: center;
+}
+aside#secondary input[type="submit"] {
+  width: 100%;
+  background: #061421;
+  border: 2px solid #061421;
+  border-radius: 0px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-family: "Raleway", arial, sans-serif;
+  min-height: 40px;
+}
+aside#secondary textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #061421;
+  border-radius: 0px;
+  color: #061421;
+  text-align: left;
 }
 /* services */
 @media only screen and (min-width: 768px) {
