@@ -20,7 +20,7 @@
 	<div class="wrapper container-fluid" id="wrapper-footer">
 
 <div class="container-fluid">
-  <div class="container animatedParent animateOnce" data-sequence="500">
+  <div class="container animatedParent animateOnce" data-sequence="650" data-appear-top-offset="-50">
 
 
 <div class="row align-items-end">

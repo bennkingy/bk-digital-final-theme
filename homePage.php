@@ -19,7 +19,7 @@ get_header(); ?>
     </section>
 
     <section class="sectionSection">
-    <div class="animatedParent animateOnce" data-sequence="400" data-appear-top-offset="-150">
+    <div class="animatedParent animateOnce" data-sequence="650" data-appear-top-offset="-150">
         <h1 class="text-center titleheader animated fadeIn animateOnce" data-id='1'>PORTFOLIO</h1>
 
         <div class="centerButtons animated fadeIn animateOnce" data-id='2'>
@@ -111,7 +111,7 @@ get_header(); ?>
 
     <section class="blogItems">
 
-        <div class="container animatedParent animateOnce" data-sequence="400"  data-appear-top-offset="-150">
+        <div class="container animatedParent animateOnce" data-sequence="650"  data-appear-top-offset="-150">
             <div>
             <h1 class="text-center titleheader animated fadeIn animateOnce" data-id='1'>BLOG</h1>
             </div>
@@ -152,7 +152,7 @@ get_header(); ?>
     </section>
 
     <section id="clients">  
-        <div class="container animatedParent animateOnce" data-sequence="400" data-appear-top-offset="-150">
+        <div class="container animatedParent animateOnce" data-sequence="650" data-appear-top-offset="-200">
             <h1 class="text-center titleheader animated fadeIn animateOnce" data-id='1'>Clients</h2>
 
             <!-- Swiper -->
@@ -172,7 +172,7 @@ get_header(); ?>
     <div class="px-row-polygon3"></div>
 
     <section id="deal">
-    <div class="animatedParent animateOnce" data-sequence="400" data-appear-top-offset="-150">
+    <div class="animatedParent animateOnce" data-sequence="650" data-appear-top-offset="-250">
     <div class="container">
         <div id="timedown" class='animated fadeIn animateOnce' data-id='1'>Deal runs out in: <span id="demo"></span></div>
         <div class='animated fadeIn animateOnce' data-id='2'><h1 class="text-center">All In One Package</h1></div>

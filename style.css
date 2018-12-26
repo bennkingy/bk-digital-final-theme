@@ -1021,8 +1021,6 @@ h1 {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   font-weight: 400;
-  border: 2PX SOLID WHITE;
-  border-radius: 5px;
 }
 .firstSection__text-box .btn--clear:hover {
   padding: 1.3rem 3.3rem;
@@ -1033,6 +1031,7 @@ h1 {
 .firstSection__text-box .btn--clear:hover > span {
   -webkit-transform: translate3d(-1.6rem, 0, 0);
   transform: translate3d(-1.6rem, 0, 0);
+  border-bottom: 2px solid transparent;
 }
 .firstSection__text-box .btn--clear i {
   background: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/eye.svg');
@@ -1051,6 +1050,7 @@ h1 {
   transition: all 300ms ease-out;
   will-change: transform;
   text-rendering: geometricPrecision;
+  border-bottom: 2PX SOLID WHITE;
 }
 .firstSection__text-box .btn--clear > span > i {
   position: absolute;
@@ -1080,6 +1080,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 200px;
+  margin-left: -3px;
 }
 @media (max-width: 570px) {
   .firstSection__text-box .header__brand {
@@ -1216,16 +1217,19 @@ h1 {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
   width: auto;
-  border-radius: 2px;
   color: #061421;
   letter-spacing: 2px;
   background: none !important;
-  border: none !important;
+  border: none;
+  border-radius: 0px;
+  /* border-bottom: 2px solid #061421; */
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
   font-weight: 500;
   cursor: pointer;
+  padding: 0.6em 0em 0.2em;
+  margin-right: 28px;
 }
 .centerButtons .button:hover {
   color: #061421 !important;
@@ -1269,6 +1273,7 @@ h1 {
   z-index: 999;
   position: relative;
   margin-bottom: -1px;
+  margin-left: -3px;
 }
 @media (max-width: 1024px) {
   .revGallery-anchor {
@@ -1429,6 +1434,7 @@ section.blogItems .card:before {
 }
 .px-row-polygon3 {
   height: 200px;
+  margin-left: -3px;
   background-color: #fff;
   margin-top: -200px;
   z-index: 999;
@@ -1614,6 +1620,7 @@ footer #logofooter {
   margin-top: -200px;
   z-index: 1;
   position: relative;
+  margin-left: -3px;
 }
 .entry-header2 > h1 {
   display: block;
@@ -1653,22 +1660,36 @@ footer #logofooter {
 body.page-template footer {
   padding-top: 0.8rem;
 }
+#primary {
+  BACKGROUND: WHITE;
+  Z-INDEX: 1;
+  POSITION: relative;
+  margin-top: -1px;
+}
 .mainContent {
   padding: 4rem;
 }
 .mainContent p {
-  font-family: "Poppins", arial, sans-serif;
-  font-weight: 500;
+  font-family: "Raleway", arial, sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   font-size: 1.9rem;
 }
 /* Side bar */
+aside#secondary {
+  padding: 4rem;
+  padding-top: 3rem;
+}
+aside#secondary .widget {
+  margin: 0 0 3.3rem;
+}
 aside#secondary .widget-title {
   font-size: 2.8rem;
   font-family: "Raleway", arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
+  margin-bottom: 0.4rem;
 }
 aside#secondary .widget-title:before {
   content: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon.svg');
@@ -1700,10 +1721,10 @@ aside#secondary ul {
   font-size: 1.8rem;
   font-family: "Raleway", arial, sans-serif;
   text-align: center;
-  text-transform: uppercase;
   font-weight: 400;
   list-style-type: none;
   padding: 0px;
+  text-transform: capitalize;
   margin: 0px;
   text-decoration: underline;
   margin: 0px;
