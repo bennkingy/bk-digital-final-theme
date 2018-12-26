@@ -1221,8 +1221,8 @@ h1 {
   letter-spacing: 2px;
   background: none !important;
   border: none;
+  border-bottom: 2px solid #061421;
   border-radius: 0px;
-  /* border-bottom: 2px solid #061421; */
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
@@ -1231,9 +1231,13 @@ h1 {
   padding: 0.6em 0em 0.2em;
   margin-right: 28px;
 }
+.centerButtons .button:last-of-type {
+  margin-right: 0px;
+}
 .centerButtons .button:hover {
   color: #061421 !important;
   text-shadow: none !important;
+  transform: translate(0px, -5px);
 }
 .centerButtons .button:active, .centerButtons .button.is-checked {
   background-color: #28f;
@@ -1765,6 +1769,15 @@ aside#secondary textarea {
   border-radius: 0px;
   color: #061421;
   text-align: left;
+}
+@media (max-width: 767px) {
+  aside#secondary {
+    MARGIN-TOP: -7REM;
+    MARGIN-BOTTOM: -5REM;
+  }
+  .mainContent {
+    padding-top: 1rem;
+  }
 }
 /* services */
 @media only screen and (min-width: 768px) {
