@@ -25,10 +25,10 @@
 
 <div class="row align-items-end">
 
-<div class="col-xs-12 col-sm-6 animated fadeInRight animateOnce"  data-id='1'>
+<div class="col-xs-12 col-sm-6 animated fadeInRightShort animateOnce"  data-id='1'>
               <img id="logofooter" src="https://web.archive.org/web/20181127052714im_/https://www.bkdigital.co.uk/wp-content/uploads/2018/05/bk-digital-logo.png">
 	</div>
-	<div class="col-xs-12 col-sm-6 animated fadeInLeft animateOnce" data-id='1'>
+	<div class="col-xs-12 col-sm-6 animated fadeInLeftShort animateOnce" data-id='1'>
     <div class="col-xs-12">
 		  <ul id="socials">
 			<li>     <svg class="svg-inline--fa fa-facebook-f fa-w-9 fa-3x" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512"><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg><!-- <i class="fab fa-facebook-f fa-3x"></i> --> </li> 
