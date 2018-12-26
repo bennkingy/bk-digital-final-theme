@@ -938,10 +938,8 @@ h1 {
   -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-#masthead {
-  transition: all 0.5s ease-in-out;
-  background: transparent;
-}
+/* #masthead {    -webkit-transition: all .5s ease-in-out;    -o-transition: all .5s ease-in-out;    transition: all .5s ease-in-out;background:transparent;}
+ */
 .headerItems {
   position: relative;
   z-index: 2;
@@ -957,28 +955,32 @@ h1 {
 .headerItems__logo {
   height: 7rem;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  background: #2cbf84;
-  height: 150px;
-}
-#masthead.sticky .navigation__background {
-  top: 2.5rem;
-  right: 2.5rem;
-  transition: all 0.5s ease-in-out;
-}
-#masthead.sticky .navigation__button {
-  top: 1.9rem;
-  right: 2rem;
-  transition: all 0.5s ease-in-out;
-}
+/* Header Animation
+ .sticky {
+ position: fixed;
+ top: 0;
+ width: 100%;
+ -webkit-transition: all .5s ease-in-out;
+ -o-transition: all .5s ease-in-out;
+ transition: all .5s ease-in-out;
+ background: #2cbf84;
+ height: 150px;
+ }
+ #masthead.sticky .navigation__background {
+ top: 2.5rem;
+ right: 2.5rem;
+ -webkit-transition: all .5s ease-in-out;
+ -o-transition: all .5s ease-in-out;
+ transition: all .5s ease-in-out;
+ }
+ #masthead.sticky .navigation__button {
+ top: 1.9rem;
+ right: 2rem;
+ -webkit-transition: all .5s ease-in-out;
+ -o-transition: all .5s ease-in-out;
+ transition: all .5s ease-in-out;
+ }
+ */
 .firstSection {
   height: 100vh;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 4, 4, 0.9)), to(rgba(4, 4, 4, 0.6))), url('https://www.bkdigital.co.uk/wp-content/uploads/2018/11/bg.jpeg');
@@ -1155,10 +1157,10 @@ h1 {
   top: -9px;
   width: 20px;
   display: inline-block;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
   transform: scaleX(-1);
+  -webkit-filter: FlipH;
   filter: FlipH;
   -ms-filter: "FlipH";
 }
@@ -1263,6 +1265,8 @@ h1 {
 .centerButtons .button:hover {
   color: #061421 !important;
   text-shadow: none !important;
+  -webkit-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
   transform: translate(0px, -5px);
 }
 .centerButtons .button:active, .centerButtons .button.is-checked {
@@ -1354,10 +1358,10 @@ section.blogItems {
   top: -9px;
   width: 20px;
   display: inline-block;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
   transform: scaleX(-1);
+  -webkit-filter: FlipH;
   filter: FlipH;
   -ms-filter: "FlipH";
 }
@@ -1386,6 +1390,9 @@ section.blogItems .card:before {
   right: 0;
   top: 0;
   bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(2, 19, 37, 0.5)), to(rgba(2, 19, 37, 0.6)));
+  background: -webkit-linear-gradient(bottom, rgba(2, 19, 37, 0.5), rgba(2, 19, 37, 0.6));
+  background: -o-linear-gradient(bottom, rgba(2, 19, 37, 0.5), rgba(2, 19, 37, 0.6));
   background: linear-gradient(to top, rgba(2, 19, 37, 0.5), rgba(2, 19, 37, 0.6));
 }
 .card-img-overlay {
@@ -1400,6 +1407,9 @@ section.blogItems .card:before {
 /****************** Clients Section
  *********************************/
 #clients {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(2, 19, 37, 0.98)), to(rgba(2, 19, 37, 0.65))), url(https://images.pexels.com/photos/236093/pexels-photo-236093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: -webkit-linear-gradient(bottom, rgba(2, 19, 37, 0.98), rgba(2, 19, 37, 0.65)), url(https://images.pexels.com/photos/236093/pexels-photo-236093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: -o-linear-gradient(bottom, rgba(2, 19, 37, 0.98), rgba(2, 19, 37, 0.65)), url(https://images.pexels.com/photos/236093/pexels-photo-236093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-image: linear-gradient(to top, rgba(2, 19, 37, 0.98), rgba(2, 19, 37, 0.65)), url(https://images.pexels.com/photos/236093/pexels-photo-236093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   padding-top: 4rem;
   background-position: center center;
@@ -1428,10 +1438,10 @@ section.blogItems .card:before {
   top: -9px;
   width: 20px;
   display: inline-block;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
   transform: scaleX(-1);
+  -webkit-filter: FlipH;
   filter: FlipH;
   -ms-filter: "FlipH";
 }
@@ -1447,15 +1457,12 @@ section.blogItems .card:before {
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
   margin-bottom: 4rem;
 }
@@ -1503,10 +1510,10 @@ section.blogItems .card:before {
   top: -9px;
   width: 20px;
   display: inline-block;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
   transform: scaleX(-1);
+  -webkit-filter: FlipH;
   filter: FlipH;
   -ms-filter: "FlipH";
 }
@@ -1536,12 +1543,14 @@ section.blogItems .card:before {
   margin-bottom: 0px;
   z-index: 1;
   position: relative;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   margin-bottom: -208px;
 }
 #wrapper-footer > div {
   background: #061421;
-  padding-bottom: 30px;
+  padding-bottom: 6.5rem;
 }
 #wrapper-footer .container-fluid {
   padding-top: 17rem;
@@ -1554,6 +1563,7 @@ footer {
 }
 footer a {
   color: #fff;
+  -webkit-text-decoration: underline 1px dotted;
   text-decoration: underline 1px dotted;
 }
 footer #logofooter {
@@ -1615,6 +1625,7 @@ footer #logofooter {
     margin-left: 0px;
     display: inline-block;
     float: none;
+    -webkit-padding-start: 0px;
     padding-inline-start: 0px;
     padding-left: 0px !important;
   }
@@ -1680,10 +1691,10 @@ footer #logofooter {
   top: -9px;
   width: 20px;
   display: inline-block;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
   transform: scaleX(-1);
+  -webkit-filter: FlipH;
   filter: FlipH;
   -ms-filter: "FlipH";
 }
@@ -1691,9 +1702,9 @@ body.page-template footer {
   padding-top: 0.8rem;
 }
 #primary {
-  BACKGROUND: WHITE;
-  Z-INDEX: 1;
-  POSITION: relative;
+  background: #fff;
+  z-index: 1;
+  position: relative;
   margin-top: -1px;
 }
 .mainContent {
@@ -1724,7 +1735,6 @@ aside#secondary .widget-title {
 aside#secondary .widget-title:before {
   content: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon.svg');
   position: relative;
-  /* with class ModalCarrot ??*/
   z-index: 3;
   left: -10px;
   top: -7px;
@@ -1734,16 +1744,15 @@ aside#secondary .widget-title:before {
 aside#secondary .widget-title:after {
   content: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/12/sideicon.svg');
   position: relative;
-  /* with class ModalCarrot ??*/
   z-index: 3;
   right: -10px;
   top: -7px;
   width: 16px;
   display: inline-block;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
   transform: scaleX(-1);
+  -webkit-filter: FlipH;
   filter: FlipH;
   -ms-filter: "FlipH";
 }
@@ -1805,36 +1814,12 @@ aside#secondary textarea {
     padding-top: 1rem;
   }
 }
-/* services */
-@media only screen and (min-width: 768px) {
-  .loTable .tableCell {
-    display: table-cell;
-    height: 100%;
-    vertical-align: middle;
-    float: none;
-    overflow: hidden;
-  }
-  .loTable .halfImg {
-    min-height: 500px;
-    max-width: 180%;
-    min-width: 100%;
-    vertical-align: bottom;
-    display: block;
-    position: relative;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-}
-.half {
-  padding: 0px 0;
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-}
-.lowlightbg {
-  background-color: #192733;
+/* SERVICES */
+.centerAnything {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

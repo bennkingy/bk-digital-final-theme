@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/bootstrap.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js"></script>
+		
 	<?php wp_head(); ?>
 </head>
 
@@ -86,6 +87,16 @@
 			});
 		
 	});
+	</script>
+	
+	<script>
+	// If mobile menu open, disable page scroll
+	$(document).ready(function() {
+
+		$("#header").headroom();
+
+	});
+			
 	</script>
 
 	<div id="content" class="site-content">
