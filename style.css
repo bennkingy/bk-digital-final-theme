@@ -837,7 +837,7 @@ h1 {
 }
 .navigation__list {
   position: absolute;
-  top: 47%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -1732,32 +1732,13 @@ aside#secondary ul {
 }
 aside#secondary ul li a {
   color: #061421;
+  font-family: "Raleway", arial, sans-serif;
+}
+.wpcf7-form {
+  font-family: "Raleway", arial, sans-serif;
 }
 aside#secondary input {
   width: 100%;
-}
-aside#secondary input:not([type="submit"]):focus, textarea:focus {
-  border: 0;
-  box-shadow: none;
-  -moz-appearance: none;
-  outline: 0px none transparent;
-}
-aside#secondary input::-webkit-input-placeholder, aside#secondary textarea::-webkit-input-placeholder {
-  color: #222;
-  -webkit-transition: text-indent 0.5s ease, color 0.5s ease;
-}
-aside#secondary input::-moz-placeholder, aside#secondary textarea::-moz-placeholder {
-  color: #222;
-  opacity: 1;
-  -webkit-transition: text-indent 0.5s ease, color 0.5s ease;
-}
-aside#secondary [placeholder]:focus::-webkit-input-placeholder {
-  text-indent: 10em;
-  color: transparent;
-}
-aside#secondary [placeholder]:focus::-webkit-textarea-placeholder {
-  text-indent: 10em;
-  color: transparent;
 }
 /* services */
 @media only screen and (min-width: 768px) {
