@@ -27,7 +27,18 @@ get_header(); ?>
         </div>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+    </div><!-- #primary -->
+    
+    <script>
+        $(document).ready(function() {
+
+            if (parseInt($(window).width()) < 991) {
+
+                $(".thirdCol").insertAfter(".fourthCol");
+            }
+
+        });
+    </script>
 
 <?php
 get_footer();

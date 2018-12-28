@@ -39,7 +39,7 @@
 	</div>
 	<div class="col-sm-12">
 		 <div class="site-info">
-			Copyrignt 2018 <a href="https://www.bkdigital.co.uk">BKDigital</a>
+			Copyright © 2018 <a href="https://www.bkdigital.co.uk">BKDigital</a>
 		</div><!-- .site-info -->
 	</div>
 </div>
