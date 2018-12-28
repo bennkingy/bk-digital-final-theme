@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js"></script>
-		
+
 	<?php wp_head(); ?>
 </head>
 
@@ -34,30 +34,35 @@
 
 	<header id="masthead" class="site-header headerItems animatedParent animateOnce" data-sequence="500">
 
-		<div class="site-branding animated fadeInLeft animateOnce"  data-id='1'>
-			<div class="headerItems__logo-box">
-			<?php
-            the_custom_logo();
-            ?>
-			</div>
-		</div><!-- .site-branding -->
-
-		<div class="navigation animated fadeInRight animateOnce"  data-id='1'>
-			<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-			<label for="navi-toggle" class="navigation__button">
-				<span class="navigation__icon">&nbsp;</span>
-			</label>
-			<div class="navigation__background">&nbsp;</div>
-			<nav class="navigation__nav">
-				<?php
-                wp_nav_menu(array(
-                    'theme_location' => 'menu-1',
-                    'menu_class' => 'navigation__list',
-                    'add_li_class'  => 'your-class-name1 your-class-name-2'
-                ));
-                ?>
-			</nav>
-		</div><!-- .navigation -->
+ 		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="site-branding animated fadeInLeft animateOnce"  data-id='1'>
+						<div class="headerItems__logo-box">
+						<?php
+                        the_custom_logo();
+                        ?>
+						</div>
+					</div><!-- .site-branding -->
+				</div>
+				<div class="navigation animated fadeInRight animateOnce"  data-id='1'>
+					<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+					<label for="navi-toggle" class="navigation__button">
+						<span class="navigation__icon">&nbsp;</span>
+					</label>
+					<div class="navigation__background">&nbsp;</div>
+					<nav class="navigation__nav">
+						<?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'menu-1',
+                            'menu_class' => 'navigation__list',
+                            'add_li_class'  => 'your-class-name1 your-class-name-2'
+                        ));
+                        ?>
+					</nav>
+				</div><!-- .navigation -->
+			</div>	
+		</div>
 		
 	</header><!-- #masthead -->
 
@@ -74,6 +79,7 @@
 					overflow: 'initial',
 					height: 'initial'
 				});
+
 			}
 			else {
 
@@ -81,22 +87,14 @@
 					overflow: 'hidden',
 					height: '100%'
 				});
+
+			//	$('.changeToTwelve').addClass( "col-xs-12" ).removeClass("col-xs-6");
 			
 			}
 
 			});
 		
 	});
-	</script>
-	
-	<script>
-	// If mobile menu open, disable page scroll
-	$(document).ready(function() {
-
-		$("#header").headroom();
-
-	});
-			
 	</script>
 
 	<div id="content" class="site-content">

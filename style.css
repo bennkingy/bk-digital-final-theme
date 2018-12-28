@@ -955,32 +955,30 @@ h1 {
 .headerItems__logo {
   height: 7rem;
 }
-/* Header Animation
- .sticky {
- position: fixed;
- top: 0;
- width: 100%;
- -webkit-transition: all .5s ease-in-out;
- -o-transition: all .5s ease-in-out;
- transition: all .5s ease-in-out;
- background: #2cbf84;
- height: 150px;
- }
- #masthead.sticky .navigation__background {
- top: 2.5rem;
- right: 2.5rem;
- -webkit-transition: all .5s ease-in-out;
- -o-transition: all .5s ease-in-out;
- transition: all .5s ease-in-out;
- }
- #masthead.sticky .navigation__button {
- top: 1.9rem;
- right: 2rem;
- -webkit-transition: all .5s ease-in-out;
- -o-transition: all .5s ease-in-out;
- transition: all .5s ease-in-out;
- }
- */
+/* Header Animation */
+.headroom {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  height: 150px;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--top .headerItems__logo-box {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.headroom--not-top .headerItems__logo-box {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.headroom--unpinned {
+  transform: translateY(-220%);
+}
 .firstSection {
   height: 100vh;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 4, 4, 0.9)), to(rgba(4, 4, 4, 0.6))), url('https://www.bkdigital.co.uk/wp-content/uploads/2018/11/bg.jpeg');
@@ -1108,7 +1106,6 @@ h1 {
   left: 0;
   width: 100%;
   height: 200px;
-  margin-left: -3px;
 }
 @media (max-width: 570px) {
   .firstSection__text-box .header__brand {

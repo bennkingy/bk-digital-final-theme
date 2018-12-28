@@ -365,32 +365,29 @@ h1 {
 
 }
 
-/* Header Animation
-.sticky {
-    position: fixed;
+/* Header Animation */
+.headroom {
+	position: fixed;
     top: 0;
     width: 100%;
     -webkit-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    background: #2cbf84;
+	transition: all .5s ease-in-out;
 	height: 150px;
 }
-#masthead.sticky .navigation__background {
-    top: 2.5rem;
-	right: 2.5rem;
-	-webkit-transition: all .5s ease-in-out;
-	-o-transition: all .5s ease-in-out;
-	transition: all .5s ease-in-out;
+.headroom--pinned {
+	transform: translateY(0%);
 }
-#masthead.sticky .navigation__button {
-    top: 1.9rem;
-	right: 2rem;
-	-webkit-transition: all .5s ease-in-out;
-	-o-transition: all .5s ease-in-out;
-	transition: all .5s ease-in-out;
+.headroom--top .headerItems__logo-box {
+	opacity:1;transition: all .5s ease-in-out;
 }
-*/
+.headroom--not-top .headerItems__logo-box {
+	opacity:0;transition: all .5s ease-in-out;
+}
+.headroom--unpinned {
+	transform: translateY(-220%);
+}
+
 
 // First section
 .firstSection{
@@ -569,7 +566,6 @@ h1 {
 	  left: 0;
 	  width: 100%;
 	  height: 200px;
-	  margin-left: -3px;
 	}
   
 }

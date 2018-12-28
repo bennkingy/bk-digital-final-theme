@@ -39,17 +39,7 @@
 	</div>
 	<div class="col-sm-12">
 		 <div class="site-info">
-			<a href="<?php echo esc_url(__('https://wordpress.org/', 'bk-digital-final-theme')); ?>">
-				<?php
-                /* translators: %s: CMS name, i.e. WordPress. */
-                printf(esc_html__('Proudly powered by %s', 'bk-digital-final-theme'), 'WordPress');
-                ?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-                /* translators: 1: Theme name, 2: Theme author. */
-                printf(esc_html__('Theme: %1$s by %2$s.', 'bk-digital-final-theme'), 'bk-digital-final-theme', '<a href="https://github.com/bennkingy/">Benn Kingy</a>');
-                ?>
+			Copyrignt 2018 <a href="https://www.bkdigital.co.uk">BKDigital</a>
 		</div><!-- .site-info -->
 	</div>
 </div>
@@ -67,18 +57,12 @@
 </div><!-- #page -->
 
 <script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("masthead");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+var Header = document.querySelector('header');
+var headroom = new Headroom(Header, {
+  "offset": 205,
+  "tolerance": 5
+});
+headroom.init();
 </script>
 
 <!-- JS files -->
