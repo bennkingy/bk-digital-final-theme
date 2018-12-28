@@ -181,8 +181,6 @@ h1 {
 		right: 4rem;
 		border-radius: 50%;
 		z-index: 2000;
-		-webkit-box-shadow: 0 1rem 3rem rgba($color-black, .1);
-		        box-shadow: 0 1rem 3rem rgba($color-black, .1);
 		text-align: center;
 		cursor: pointer;
 	}
@@ -792,7 +790,7 @@ h1 {
     -webkit-clip-path: polygon(100% 100%, 0 100%, 100% 73%);
     clip-path: polygon(100% 100%, -2% 100%, 100% 73%);
     margin-top: -200px;
-    z-index: 999;
+    z-index: 1;
     position: relative;
 	margin-bottom: -1px;
 	margin-left: -3px;
@@ -821,7 +819,7 @@ section.blogItems {
 	background-color: #061421 !important;
 	color: white;
 	margin-top: -1px;
-    z-index: 2;
+    z-index: 1;
 	position: relative;
 	padding-top: 3rem;
 	padding-bottom: 7rem;
@@ -1029,8 +1027,9 @@ list-style-type: none;
 	margin-bottom: 37px;
 	float: right;
 }
-.site-info {float:right;margin-top:2rem;}
-
+.site-info {float:right;margin-top:2rem;color: white; text-transform: uppercase;}
+.site-info a {color: white;text-transform: uppercase;border-bottom: 2px solid white;text-decoration: none;
+    padding-bottom: 4px;}
 #colophon > div { // Fixes bottom gap below footer bug
     text-align: center;
     margin-bottom: -30px;
